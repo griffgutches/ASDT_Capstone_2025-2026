@@ -3,13 +3,431 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "db968e42-3ace-4cc9-9096-9d8f48135c40")
-	(paper "A0")
+	(paper "A4")
 	(title_block
 		(title "SX1261 Radio Schematic")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "Connector:Conn_Coaxial"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0.254 3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_Coaxial"
+				(at 2.921 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA MCX MMCX U.FL UMRF"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*BNC* *SMA* *SMB* *SMC* *Cinch* *LEMO* *UMRF* *MCX* *U.FL*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_Coaxial_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.778 0)
+					(mid 0.222 -1.8079)
+					(end -1.778 -0.508)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.778 0.508)
+					(mid 0.2221 1.8084)
+					(end 1.778 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Conn_Coaxial_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "In"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "Ext"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(wire
+		(pts
+			(xy 107.95 119.38) (xy 111.76 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13855af2-4bd6-43df-8251-ddfff1b7c0a6")
+	)
+	(symbol
+		(lib_id "Connector:Conn_Coaxial")
+		(at 116.84 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0fb1d22a-3aca-4c6b-b9ee-c3eb7f46ccc9")
+		(property "Reference" "J1"
+			(at 120.65 118.4031 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_Coaxial"
+			(at 120.65 120.9431 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount"
+			(at 116.84 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)"
+			(at 116.84 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8c4c6830-70be-485b-ab0b-419d09b867d0")
+		)
+		(pin "1"
+			(uuid "f40f5593-57c3-4ce6-8eac-2b761bf56668")
+		)
+		(instances
+			(project ""
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 116.84 124.46 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a121dcd9-3087-4f87-aab2-0fc7c1c87739")
+		(property "Reference" "#PWR08"
+			(at 116.84 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "070c6b5d-2554-48c1-83f2-d0ea1dd4fc3a")
+		)
+		(instances
+			(project ""
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
-		(at 541.02 161.29)
+		(at 124.46 107.95)
 		(size 41.91 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25,7 +443,7 @@
 		)
 		(uuid "2f8aaf77-ed56-4ab3-b636-086bef6b8f79")
 		(property "Sheetname" "PWR"
-			(at 541.02 160.5784 0)
+			(at 124.46 107.2384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34,7 +452,7 @@
 			)
 		)
 		(property "Sheetfile" "PWR.kicad_sch"
-			(at 541.02 186.0046 0)
+			(at 124.46 132.6646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51,7 +469,7 @@
 		)
 	)
 	(sheet
-		(at 482.6 86.36)
+		(at 66.04 33.02)
 		(size 20.32 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -67,7 +485,7 @@
 		)
 		(uuid "3c97324b-a98c-481d-b668-72d535313430")
 		(property "Sheetname" "Magnetometer"
-			(at 482.6 85.6484 0)
+			(at 66.04 32.3084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -76,7 +494,7 @@
 			)
 		)
 		(property "Sheetfile" "MAGNETOMETER.kicad_sch"
-			(at 482.6 111.0746 0)
+			(at 66.04 57.7346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -85,7 +503,7 @@
 			)
 		)
 		(pin "INT" input
-			(at 482.6 91.44 180)
+			(at 66.04 38.1 180)
 			(uuid "a683b6ba-5185-40e5-bacd-61934a75e301")
 			(effects
 				(font
@@ -95,7 +513,7 @@
 			)
 		)
 		(pin "SCL{slash}SPI_SCK" input
-			(at 482.6 95.25 180)
+			(at 66.04 41.91 180)
 			(uuid "9e8b605c-e305-41b2-b342-1a28135f05fd")
 			(effects
 				(font
@@ -105,7 +523,7 @@
 			)
 		)
 		(pin "SDA{slash}SPI_SDI" input
-			(at 482.6 97.79 180)
+			(at 66.04 44.45 180)
 			(uuid "53ef1890-46cf-47d5-a643-c15291b394cc")
 			(effects
 				(font
@@ -115,7 +533,7 @@
 			)
 		)
 		(pin "SPI_CS" input
-			(at 482.6 100.33 180)
+			(at 66.04 46.99 180)
 			(uuid "399ed661-f445-44e9-8088-920b2718d611")
 			(effects
 				(font
@@ -125,7 +543,7 @@
 			)
 		)
 		(pin "SPI_SDO" input
-			(at 482.6 102.87 180)
+			(at 66.04 49.53 180)
 			(uuid "478b48fe-26e2-4362-a801-0b0021bb4d4d")
 			(effects
 				(font
@@ -143,7 +561,7 @@
 		)
 	)
 	(sheet
-		(at 595.63 128.27)
+		(at 179.07 74.93)
 		(size 38.1 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -159,7 +577,7 @@
 		)
 		(uuid "6de4bf02-03b0-4601-a6b2-a0bf99e05925")
 		(property "Sheetname" "BAROMETER"
-			(at 595.63 127.5584 0)
+			(at 179.07 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -168,7 +586,7 @@
 			)
 		)
 		(property "Sheetfile" "BAROMETER.kicad_sch"
-			(at 595.63 151.7146 0)
+			(at 179.07 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -177,7 +595,7 @@
 			)
 		)
 		(pin "CSB_BMP" input
-			(at 595.63 133.35 180)
+			(at 179.07 80.01 180)
 			(uuid "765440ff-38bf-432c-99aa-2ccd97cf908c")
 			(effects
 				(font
@@ -187,7 +605,7 @@
 			)
 		)
 		(pin "CSB_MS" input
-			(at 595.63 144.78 180)
+			(at 179.07 91.44 180)
 			(uuid "267d5eae-67e9-4a64-ac06-fa5e93d18364")
 			(effects
 				(font
@@ -197,7 +615,7 @@
 			)
 		)
 		(pin "SCK" input
-			(at 633.73 134.62 0)
+			(at 217.17 81.28 0)
 			(uuid "78757407-3789-439a-929c-97fc455e1efc")
 			(effects
 				(font
@@ -207,7 +625,7 @@
 			)
 		)
 		(pin "SDI" input
-			(at 633.73 137.16 0)
+			(at 217.17 83.82 0)
 			(uuid "9ac9469e-d28c-4e32-9b20-b8da8b309e5b")
 			(effects
 				(font
@@ -217,7 +635,7 @@
 			)
 		)
 		(pin "SDO" output
-			(at 633.73 139.7 0)
+			(at 217.17 86.36 0)
 			(uuid "57abbcf4-bf71-4e3f-ad08-2cde0e9f1ed9")
 			(effects
 				(font
@@ -235,7 +653,7 @@
 		)
 	)
 	(sheet
-		(at 482.6 128.27)
+		(at 66.04 74.93)
 		(size 41.91 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -251,7 +669,7 @@
 		)
 		(uuid "795ab2be-9db7-4254-b05c-ac2b60177344")
 		(property "Sheetname" "MCU"
-			(at 482.6 127.5584 0)
+			(at 66.04 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -260,7 +678,7 @@
 			)
 		)
 		(property "Sheetfile" "MCU.kicad_sch"
-			(at 482.6 151.7146 0)
+			(at 66.04 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -277,7 +695,7 @@
 		)
 	)
 	(sheet
-		(at 595.63 161.29)
+		(at 179.07 107.95)
 		(size 38.1 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -293,7 +711,7 @@
 		)
 		(uuid "84d97f14-c225-4d7e-a6be-20b284069948")
 		(property "Sheetname" "IMU"
-			(at 595.63 160.5784 0)
+			(at 179.07 107.2384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -302,7 +720,7 @@
 			)
 		)
 		(property "Sheetfile" "IMU.kicad_sch"
-			(at 595.63 186.0046 0)
+			(at 179.07 132.6646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -319,7 +737,7 @@
 		)
 	)
 	(sheet
-		(at 541.02 128.27)
+		(at 124.46 74.93)
 		(size 41.91 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -335,7 +753,7 @@
 		)
 		(uuid "8e4cdb71-132b-47cb-b7a6-96b497234d11")
 		(property "Sheetname" "RF_WIFI"
-			(at 541.02 127.5584 0)
+			(at 124.46 74.2184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -344,7 +762,7 @@
 			)
 		)
 		(property "Sheetfile" "RF_WIFI.kicad_sch"
-			(at 541.02 151.7146 0)
+			(at 124.46 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -361,7 +779,7 @@
 		)
 	)
 	(sheet
-		(at 595.63 86.36)
+		(at 179.07 33.02)
 		(size 38.1 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -377,7 +795,7 @@
 		)
 		(uuid "caa54f87-1e96-4d4c-b6a8-b81d14fe08af")
 		(property "Sheetname" "GPS"
-			(at 595.63 85.6484 0)
+			(at 179.07 32.3084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -386,12 +804,52 @@
 			)
 		)
 		(property "Sheetfile" "GPS.kicad_sch"
-			(at 595.63 111.0746 0)
+			(at 179.07 57.7346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "Antenna" input
+			(at 217.17 40.64 0)
+			(uuid "69eafb96-8e4d-40d9-9667-852afd5f052e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "EXTINT" input
+			(at 179.07 40.64 180)
+			(uuid "8662c87d-1a72-497b-93ce-85ecc59feba7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SCL" input
+			(at 179.07 43.18 180)
+			(uuid "38ed3855-adbb-45ca-935b-b39f1594699a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SDA" input
+			(at 179.07 45.72 180)
+			(uuid "cc356a8a-c81e-45a4-b196-890208f735c2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -403,7 +861,7 @@
 		)
 	)
 	(sheet
-		(at 482.6 161.29)
+		(at 66.04 107.95)
 		(size 41.91 40.64)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -419,7 +877,7 @@
 		)
 		(uuid "f67abaa3-07d9-44aa-9d82-6b11f8890146")
 		(property "Sheetname" "RF_LORA"
-			(at 482.6 160.5784 0)
+			(at 66.04 107.2384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -428,7 +886,7 @@
 			)
 		)
 		(property "Sheetfile" "RF_LORA.kicad_sch"
-			(at 482.6 202.5146 0)
+			(at 66.04 149.1746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -437,7 +895,7 @@
 			)
 		)
 		(pin "ANT_SW" input
-			(at 524.51 187.96 0)
+			(at 107.95 134.62 0)
 			(uuid "92d138bb-32d8-4f27-b335-2e96dd995270")
 			(effects
 				(font
@@ -447,7 +905,7 @@
 			)
 		)
 		(pin "BUSY" input
-			(at 504.19 201.93 270)
+			(at 87.63 148.59 270)
 			(uuid "e4100358-17b8-44e7-b6cb-6827b69a0e75")
 			(effects
 				(font
@@ -457,7 +915,7 @@
 			)
 		)
 		(pin "DIO1" input
-			(at 482.6 171.45 180)
+			(at 66.04 118.11 180)
 			(uuid "1b3cb622-6806-42e7-9882-41776f34fe3a")
 			(effects
 				(font
@@ -467,7 +925,7 @@
 			)
 		)
 		(pin "DIO2" input
-			(at 482.6 173.99 180)
+			(at 66.04 120.65 180)
 			(uuid "b00cf9c9-250d-4c87-b481-8132cd4bf3a4")
 			(effects
 				(font
@@ -476,18 +934,8 @@
 				(justify left)
 			)
 		)
-		(pin "DIO3" input
-			(at 482.6 176.53 180)
-			(uuid "b515b91a-0ff6-408e-af34-c1a72af3f2f9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "MISO" input
-			(at 482.6 190.5 180)
+			(at 66.04 137.16 180)
 			(uuid "2c618abc-acdf-4c42-b82e-09b74a661185")
 			(effects
 				(font
@@ -497,7 +945,7 @@
 			)
 		)
 		(pin "MOSI" input
-			(at 482.6 187.96 180)
+			(at 66.04 134.62 180)
 			(uuid "ee7e5921-1aae-425f-a8c4-1d4233751746")
 			(effects
 				(font
@@ -507,7 +955,7 @@
 			)
 		)
 		(pin "NSS" input
-			(at 482.6 193.04 180)
+			(at 66.04 139.7 180)
 			(uuid "c51ca7d6-729d-404c-8bf5-8985e8246c04")
 			(effects
 				(font
@@ -517,7 +965,7 @@
 			)
 		)
 		(pin "N_RESET" input
-			(at 482.6 179.07 180)
+			(at 66.04 125.73 180)
 			(uuid "5e763dd5-0d67-4c3f-afc7-beec2e2deed3")
 			(effects
 				(font
@@ -527,7 +975,7 @@
 			)
 		)
 		(pin "SCK" input
-			(at 482.6 185.42 180)
+			(at 66.04 132.08 180)
 			(uuid "f00e8e7b-d41b-4454-b7b6-d208e47c2d28")
 			(effects
 				(font
@@ -537,7 +985,7 @@
 			)
 		)
 		(pin "SMA_CONN" input
-			(at 524.51 172.72 0)
+			(at 107.95 119.38 0)
 			(uuid "7699ea6e-2c67-472d-8839-4f9bb215670b")
 			(effects
 				(font
@@ -547,7 +995,7 @@
 			)
 		)
 		(pin "VDD_Radio" input
-			(at 504.19 161.29 90)
+			(at 87.63 107.95 90)
 			(uuid "69f99ac1-ce42-4e39-b8c9-fc20f58dfe7f")
 			(effects
 				(font
