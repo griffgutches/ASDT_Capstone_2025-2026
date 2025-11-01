@@ -1662,181 +1662,93 @@
 		)
 		(uuid "fbd80429-de97-4d9b-9d88-29453f095cc5")
 	)
-	(global_label "SCK"
-		(shape input)
-		(at 35.56 121.92 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4decf4cd-98d0-4f3f-8575-17d125cae656")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.8253 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CSB_BMP"
-		(shape input)
-		(at 40.64 116.84 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5288fc2f-138f-4abe-8edf-cba92f64ede5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 28.9463 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "CSB_MS"
-		(shape input)
-		(at 45.72 41.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5bdb91db-98c0-43ed-8078-916626140c5e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.3568 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SDI"
-		(shape input)
-		(at 35.56 124.46 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b6cc6bad-07f9-482d-8f0d-9142f58261a5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 29.4905 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SDI"
-		(shape input)
-		(at 41.91 54.61 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d87d7674-2597-48e2-99f0-47071a698f1a")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.8405 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SDO"
+	(hierarchical_label "SDO"
 		(shape output)
 		(at 29.21 127 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "d930940e-6f83-4ded-8437-56326e7a68f4")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 22.4148 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "0430ea20-8c31-488b-8f13-d1a4baf8cf05")
 	)
-	(global_label "SCK"
+	(hierarchical_label "SCK"
 		(shape input)
-		(at 41.91 49.53 180)
-		(fields_autoplaced yes)
+		(at 35.56 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "e2f7daf8-ea78-4dc9-8f97-ef60d0764b08")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 35.1753 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "14828555-1b64-4f37-a709-7a31c028b4f8")
 	)
-	(global_label "SDO"
+	(hierarchical_label "SDI"
+		(shape input)
+		(at 41.91 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "51d6a997-f3b1-4d5d-9a3b-4c9d13c4bd7e")
+	)
+	(hierarchical_label "SDI"
+		(shape input)
+		(at 35.56 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53087f76-b631-472c-8ff9-6371c3028ec7")
+	)
+	(hierarchical_label "CSB_BMP"
+		(shape input)
+		(at 40.64 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "708a079e-4640-4438-bd9b-ba2b3cb0ae6c")
+	)
+	(hierarchical_label "SDO"
 		(shape output)
 		(at 90.17 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "f5f6d9ea-db50-4fe1-a15b-4e4487763591")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 96.9652 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
+		(uuid "871a7bdc-fa20-4597-a4f5-20aa59c5e035")
+	)
+	(hierarchical_label "SCK"
+		(shape input)
+		(at 41.91 49.53 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
+		(uuid "bbf86be7-8097-4c0b-a6c7-cfe77bb0a74c")
+	)
+	(hierarchical_label "CSB_MS"
+		(shape input)
+		(at 45.72 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fa01569c-0f3f-4ace-a4c2-aa7974084827")
 	)
 	(symbol
 		(lib_id "Device:R")
