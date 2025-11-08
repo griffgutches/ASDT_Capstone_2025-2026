@@ -934,16 +934,6 @@
 				(justify left)
 			)
 		)
-		(pin "MISO" input
-			(at 66.04 137.16 180)
-			(uuid "2c618abc-acdf-4c42-b82e-09b74a661185")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "MOSI" input
 			(at 66.04 134.62 180)
 			(uuid "ee7e5921-1aae-425f-a8c4-1d4233751746")
@@ -997,6 +987,16 @@
 		(pin "VDD_Radio" input
 			(at 87.63 107.95 90)
 			(uuid "69f99ac1-ce42-4e39-b8c9-fc20f58dfe7f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MISO" output
+			(at 107.95 130.81 0)
+			(uuid "3fdc847e-2a73-4b1d-ad60-7afc5ccfcec9")
 			(effects
 				(font
 					(size 1.27 1.27)

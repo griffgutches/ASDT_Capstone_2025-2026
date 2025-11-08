@@ -3042,6 +3042,10 @@
 					(reference "#PWR016")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "#PWR016")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3106,6 +3110,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "#PWR07")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR07")
 					(unit 1)
 				)
@@ -3176,6 +3184,10 @@
 					(reference "R4")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "R4")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3239,6 +3251,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "#PWR011")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR011")
 					(unit 1)
 				)
@@ -3322,6 +3338,10 @@
 					(reference "U4")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "U4")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3386,6 +3406,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "#PWR020")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR020")
 					(unit 1)
 				)
@@ -3463,6 +3487,10 @@
 					(reference "Y3")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "Y3")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3526,6 +3554,10 @@
 		(instances
 			(project ""
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "#PWR024")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR024")
 					(unit 1)
 				)
@@ -3593,6 +3625,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "#PWR018")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR018")
 					(unit 1)
 				)
@@ -3735,6 +3771,10 @@
 					(reference "U3")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "U3")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3800,6 +3840,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "L3")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "L3")
 					(unit 1)
 				)
@@ -3895,6 +3939,10 @@
 					(reference "FL2")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "FL2")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -3965,6 +4013,10 @@
 					(reference "L4")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "L4")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4028,6 +4080,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "#PWR012")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR012")
 					(unit 1)
 				)
@@ -4101,6 +4157,10 @@
 					(reference "C11")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "C11")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4165,6 +4225,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "#PWR015")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR015")
 					(unit 1)
 				)
@@ -4235,6 +4299,10 @@
 					(reference "#PWR019")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "#PWR019")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4299,6 +4367,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "R3")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "R3")
 					(unit 1)
 				)
@@ -4368,6 +4440,10 @@
 					(reference "#PWR014")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "#PWR014")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4434,6 +4510,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "C9")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "C9")
 					(unit 1)
 				)
@@ -4507,6 +4587,10 @@
 					(reference "C10")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "C10")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4571,6 +4655,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "#PWR013")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR013")
 					(unit 1)
 				)
@@ -4644,6 +4732,10 @@
 					(reference "C8")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "C8")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4714,6 +4806,10 @@
 					(reference "C7")
 					(unit 1)
 				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "C7")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -4781,6 +4877,10 @@
 		(instances
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/f67abaa3-07d9-44aa-9d82-6b11f8890146"
+					(reference "C12")
+					(unit 1)
+				)
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "C12")
 					(unit 1)
 				)
