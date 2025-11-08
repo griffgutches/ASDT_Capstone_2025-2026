@@ -503,7 +503,11 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "Net-(AE1-A)": [
+        "50"
+      ]
+    },
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -669,6 +673,10 @@
     [
       "2f8aaf77-ed56-4ab3-b636-086bef6b8f79",
       "PWR"
+    ],
+    [
+      "acf294b8-d265-4db4-b17e-5e21ef63ae9d",
+      "flash"
     ]
   ],
   "text_variables": {}
