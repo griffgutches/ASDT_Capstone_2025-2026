@@ -506,6 +506,9 @@
     "netclass_assignments": {
       "Net-(AE1-A)": [
         "50"
+      ],
+      "Net-(AE2-A)": [
+        "50"
       ]
     },
     "netclass_patterns": []
@@ -643,40 +646,36 @@
       "Root"
     ],
     [
-      "3c97324b-a98c-481d-b668-72d535313430",
-      "Magnetometer"
+      "90b9ee1f-09cc-4b5a-82ab-b7ba82166c76",
+      "PWR"
     ],
     [
       "795ab2be-9db7-4254-b05c-ac2b60177344",
       "MCU"
     ],
     [
-      "f67abaa3-07d9-44aa-9d82-6b11f8890146",
-      "RF_LORA"
-    ],
-    [
-      "8e4cdb71-132b-47cb-b7a6-96b497234d11",
+      "c2c328e0-a6a2-4045-82d7-fe1ce93c1944",
       "RF_WIFI"
     ],
     [
-      "caa54f87-1e96-4d4c-b6a8-b81d14fe08af",
-      "GPS"
-    ],
-    [
-      "6de4bf02-03b0-4601-a6b2-a0bf99e05925",
+      "909dd632-2a0f-4e55-b8e6-044af71dac19",
       "BAROMETER"
-    ],
-    [
-      "84d97f14-c225-4d7e-a6be-20b284069948",
-      "IMU"
-    ],
-    [
-      "2f8aaf77-ed56-4ab3-b636-086bef6b8f79",
-      "PWR"
     ],
     [
       "ddd17302-66df-4ba5-8c9c-bee0e050b0e0",
       "radio"
+    ],
+    [
+      "52ec02e0-e189-4f6e-82e0-0dea153fc8ff",
+      "IMU"
+    ],
+    [
+      "bd56c2d0-6430-41ab-a92d-256e41365a97",
+      "GPS"
+    ],
+    [
+      "884971b6-34e3-480e-b770-6637cf2c2272",
+      "Magnetometer"
     ],
     [
       "acf294b8-d265-4db4-b17e-5e21ef63ae9d",

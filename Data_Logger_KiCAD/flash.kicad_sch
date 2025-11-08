@@ -490,7 +490,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca72c9e6-6a77-4cca-a2b8-43239a34350e")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR045"
 			(at 120.65 91.44 0)
 			(effects
 				(font
@@ -546,7 +546,7 @@
 			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/acf294b8-d265-4db4-b17e-5e21ef63ae9d"
-					(reference "#PWR?")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -562,7 +562,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d501ad75-27e8-4fec-9c84-f767e005e967")
-		(property "Reference" "U?"
+		(property "Reference" "U8"
 			(at 132.08 71.1199 0)
 			(effects
 				(font
@@ -657,7 +657,7 @@
 			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/acf294b8-d265-4db4-b17e-5e21ef63ae9d"
-					(reference "U?")
+					(reference "U8")
 					(unit 1)
 				)
 			)
