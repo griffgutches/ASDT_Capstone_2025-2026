@@ -1463,6 +1463,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 159 1)
 		)
 		(uuid "558d914c-78ee-4aca-b2cb-06e32619a394")
 	)
@@ -1493,6 +1494,7 @@
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 159 1)
 		)
 		(uuid "685e6593-c7ff-4852-85b0-c6843d6340d4")
 	)
@@ -1642,13 +1644,14 @@
 			(justify left bottom)
 		)
 		(uuid "30e377ce-6e24-4905-b14a-58855053805e")
-		(property "Netclass" "50"
+		(property "Netclass" "RF_50_SE"
 			(at 140.3985 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Component Class" ""

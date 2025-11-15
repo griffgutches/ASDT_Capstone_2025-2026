@@ -1055,7 +1055,7 @@
 		(uuid "f717af27-eb1d-47d6-ae69-f3c568e143bd")
 	)
 	(hierarchical_label "SPI_SDO"
-		(shape input)
+		(shape output)
 		(at 87.63 72.39 180)
 		(effects
 			(font
