@@ -117,7 +117,7 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin power_in line (at 20.32 -7.62 180.0) (length 5.08)
+      (pin power_in line (at 20.32 -7.62 180.0) (length 5.08) hide
         (name "VSS/GND"
           (effects (font (size 1.016 1.016)))
         )
@@ -125,7 +125,7 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin power_in line (at 20.32 -7.62 180.0) (length 5.08)
+      (pin power_in line (at 20.32 -7.62 180.0) (length 5.08) hide
         (name "VSS/GND"
           (effects (font (size 1.016 1.016)))
         )
