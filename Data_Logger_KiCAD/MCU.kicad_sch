@@ -7240,7 +7240,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "22p"
 			(at 46.99 253.9999 0)
 			(effects
 				(font
@@ -7249,7 +7249,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 44.1452 256.54 0)
 			(effects
 				(font
@@ -7268,6 +7268,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 43.18 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1555"
 			(at 43.18 252.73 0)
 			(effects
 				(font
@@ -7463,7 +7472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm"
 			(at 38.1 209.55 0)
 			(effects
 				(font
@@ -7482,6 +7491,15 @@
 			)
 		)
 		(property "Description" "Solder Jumper, 2-pole, closed/bridged"
+			(at 38.1 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 38.1 209.55 0)
 			(effects
 				(font
@@ -7879,6 +7897,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 209.55 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "02b3664d-bfca-4ebe-97b6-49f8594329fe")
 		)
@@ -7994,7 +8021,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 59.69 359.41 0)
 			(effects
 				(font
@@ -8013,6 +8040,15 @@
 			)
 		)
 		(property "Description" "N-MOSFET transistor, gate/source/drain"
+			(at 54.61 361.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C28646273"
 			(at 54.61 361.95 0)
 			(effects
 				(font
@@ -8165,6 +8201,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 62.23 199.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f59a3207-c0d6-4880-94dd-7ce2171e0f72")
 		)
@@ -8278,7 +8323,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm"
 			(at 45.72 306.07 0)
 			(effects
 				(font
@@ -8297,6 +8342,15 @@
 			)
 		)
 		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 45.72 306.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C501798"
 			(at 45.72 306.07 0)
 			(effects
 				(font
@@ -8580,7 +8634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 54.3052 313.69 0)
 			(effects
 				(font
@@ -8599,6 +8653,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 53.34 309.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1548"
 			(at 53.34 309.88 0)
 			(effects
 				(font
@@ -8861,7 +8924,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TerminalBlock:TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal"
 			(at 41.91 138.43 0)
 			(effects
 				(font
@@ -8880,6 +8943,15 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 41.91 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 41.91 138.43 0)
 			(effects
 				(font
@@ -8948,6 +9020,15 @@
 		)
 		(property "Description" "Resistor"
 			(at 62.23 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25905"
+			(at 62.23 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9239,7 +9320,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
 			(at 45.72 199.39 0)
 			(effects
 				(font
@@ -9258,6 +9339,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 45.72 204.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 45.72 204.47 0)
 			(effects
 				(font
@@ -9538,6 +9628,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 62.23 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "af22a415-b700-47d5-8334-9ffba3d1ce5c")
 		)
@@ -9587,7 +9686,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 33.9852 306.07 0)
 			(effects
 				(font
@@ -9606,6 +9705,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 33.02 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1548"
 			(at 33.02 302.26 0)
 			(effects
 				(font
@@ -9655,7 +9763,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_G-Switch_GT-USB-7010ASV"
 			(at 44.45 82.55 0)
 			(effects
 				(font
@@ -9674,6 +9782,15 @@
 			)
 		)
 		(property "Description" "USB 2.0-only 16P Type-C Receptacle connector"
+			(at 40.64 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2988369"
 			(at 40.64 82.55 0)
 			(effects
 				(font
@@ -9795,6 +9912,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25774"
 			(at 53.34 143.51 0)
 			(effects
 				(font
@@ -10133,7 +10259,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "22p"
 			(at 62.23 253.9999 0)
 			(effects
 				(font
@@ -10142,7 +10268,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 59.3852 256.54 0)
 			(effects
 				(font
@@ -10161,6 +10287,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 58.42 252.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1555"
 			(at 58.42 252.73 0)
 			(effects
 				(font
@@ -10303,7 +10438,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 58.42 297.18 0)
 			(effects
 				(font
@@ -10322,6 +10457,15 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 58.42 297.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C74301"
 			(at 58.42 297.18 0)
 			(effects
 				(font
@@ -10607,7 +10751,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 63.1952 213.36 0)
 			(effects
 				(font
@@ -10626,6 +10770,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 62.23 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
 			(at 62.23 209.55 0)
 			(effects
 				(font
@@ -10696,6 +10849,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 41.91 365.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
 			(at 41.91 365.76 0)
 			(effects
 				(font
@@ -11180,6 +11342,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25077"
+			(at 44.45 361.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "bc3f8715-0709-4d75-a749-ee28fcc4a486")
 		)
@@ -11353,7 +11524,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS810"
 			(at 45.72 184.15 0)
 			(effects
 				(font
@@ -11372,6 +11543,15 @@
 			)
 		)
 		(property "Description" "Push button switch, generic, two pins"
+			(at 45.72 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
 			(at 45.72 189.23 0)
 			(effects
 				(font
@@ -11442,6 +11622,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 53.34 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25741"
 			(at 53.34 153.67 0)
 			(effects
 				(font
@@ -11883,6 +12072,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25905"
+			(at 217.17 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9c62727d-70a7-4e14-a53c-a1c72085540c")
 		)
@@ -12161,7 +12359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 57.15 351.79 90)
 			(effects
 				(font
@@ -12198,6 +12396,15 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 57.15 351.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C64898"
 			(at 57.15 351.79 0)
 			(effects
 				(font
