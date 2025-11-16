@@ -2846,6 +2846,26 @@
 		)
 		(uuid "fecb1c17-2982-4cae-bc66-8053c2a5f8b2")
 	)
+	(label "DIO2"
+		(at 190.5 113.03 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56d6e673-41ee-4c51-8d99-d8f52454552a")
+	)
+	(label "DIO2"
+		(at 71.12 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ba7e6a3b-4206-4778-b37a-e3a3df6bca99")
+	)
 	(hierarchical_label "N_RESET"
 		(shape input)
 		(at 71.12 73.66 180)
@@ -2889,17 +2909,6 @@
 			(justify right)
 		)
 		(uuid "4de62d3e-a610-435e-add4-3d2914846278")
-	)
-	(hierarchical_label "DIO2"
-		(shape input)
-		(at 190.5 113.03 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4e2b64d9-fe84-4556-ba69-f6e71963215d")
 	)
 	(hierarchical_label "BUSY"
 		(shape input)
@@ -2955,17 +2964,6 @@
 			(justify right)
 		)
 		(uuid "66db8790-8d0c-45c3-b78a-399e5b400abb")
-	)
-	(hierarchical_label "DIO2"
-		(shape input)
-		(at 71.12 83.82 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "7587e1a3-05b5-474b-91ec-beac2df4858e")
 	)
 	(hierarchical_label "MISO"
 		(shape output)
