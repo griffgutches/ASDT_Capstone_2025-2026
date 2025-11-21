@@ -1886,7 +1886,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 120.3452 59.69 0)
 			(effects
 				(font
@@ -2020,7 +2020,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 85.09 42.418 90)
 			(effects
 				(font
@@ -2154,7 +2154,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MS56:SON8_MS5611_TEC"
+		(property "Footprint" "LSM6DSO32:XDCR_LSM6DSO32TR"
 			(at 64.77 55.88 0)
 			(effects
 				(font
@@ -2164,7 +2164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.te.com/usa-en/product-MS560702BA03-50.datasheet.pdf"
 			(at 64.77 55.88 0)
 			(effects
 				(font
@@ -2329,7 +2329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 103.8352 59.69 0)
 			(effects
 				(font
@@ -2338,7 +2338,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 102.87 55.88 0)
 			(effects
 				(font
@@ -2399,7 +2399,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 102.5652 134.62 0)
 			(effects
 				(font
@@ -2531,7 +2531,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BMP390L:XDCR_BMP390L"
+		(property "Footprint" "BMP390:XDCR_BMP390L"
 			(at 60.96 130.81 0)
 			(effects
 				(font
@@ -2541,7 +2541,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp390-ds002.pdf"
 			(at 60.96 130.81 0)
 			(effects
 				(font
@@ -2756,7 +2756,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 120.3452 134.62 0)
 			(effects
 				(font
