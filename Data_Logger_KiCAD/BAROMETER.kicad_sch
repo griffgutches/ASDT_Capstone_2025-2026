@@ -1533,7 +1533,7 @@
 		)
 		(uuid "6f2719e5-97fc-4d7d-a1f9-afd46059a3e3")
 	)
-	(hierarchical_label "CSB_BMP"
+	(hierarchical_label "~{CSB_BMP}"
 		(shape input)
 		(at 40.64 116.84 180)
 		(effects
@@ -1544,7 +1544,7 @@
 		)
 		(uuid "708a079e-4640-4438-bd9b-ba2b3cb0ae6c")
 	)
-	(hierarchical_label "CSB_MS"
+	(hierarchical_label "~{CSB_MS}"
 		(shape input)
 		(at 45.72 48.26 180)
 		(effects
