@@ -505,7 +505,7 @@
     "net_colors": null,
     "netclass_assignments": {
       "Net-(AE1-A)": [
-        "50"
+        "RF_50_SE"
       ],
       "Net-(AE2-A)": [
         "RF_50_SE"

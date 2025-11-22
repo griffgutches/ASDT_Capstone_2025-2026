@@ -1458,7 +1458,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 76.2) (xy 146.05 69.85)
+			(xy 151.13 76.2) (xy 151.13 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1489,7 +1489,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 76.2) (xy 146.05 76.2)
+			(xy 137.16 76.2) (xy 151.13 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1651,7 +1651,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Component Class" ""
@@ -2106,7 +2105,7 @@
 	)
 	(symbol
 		(lib_id "Device:Antenna")
-		(at 146.05 64.77 0)
+		(at 151.13 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2115,7 +2114,7 @@
 		(fields_autoplaced yes)
 		(uuid "460fd6c2-284c-4de9-b098-d005e0d55ce5")
 		(property "Reference" "AE2"
-			(at 148.59 64.1349 0)
+			(at 153.67 64.1349 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2124,7 +2123,7 @@
 			)
 		)
 		(property "Value" "Antenna"
-			(at 148.59 66.6749 0)
+			(at 153.67 66.6749 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2133,7 +2132,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 64.77 0)
+			(at 151.13 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2142,7 +2141,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 64.77 0)
+			(at 151.13 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2151,7 +2150,7 @@
 			)
 		)
 		(property "Description" "Antenna"
-			(at 146.05 64.77 0)
+			(at 151.13 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
