@@ -5751,6 +5751,16 @@
 	)
 	(wire
 		(pts
+			(xy 440.69 137.16) (xy 449.58 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34996754-b43b-47c0-90a6-0abc6fa0ea66")
+	)
+	(wire
+		(pts
 			(xy 121.92 135.89) (xy 139.7 135.89)
 		)
 		(stroke
@@ -6753,6 +6763,16 @@
 	)
 	(wire
 		(pts
+			(xy 389.89 137.16) (xy 398.78 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3a90631-7a63-4bc6-a9c9-d74c74b521c9")
+	)
+	(wire
+		(pts
 			(xy 185.42 123.19) (xy 193.04 123.19)
 		)
 		(stroke
@@ -7281,6 +7301,16 @@
 		)
 		(uuid "0691999d-7a5d-419d-8e9a-0bb53c560072")
 	)
+	(label "PWR_OUT"
+		(at 441.96 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10141e81-bfb8-417c-a87e-1dec52b7bb2f")
+	)
 	(label "MISO"
 		(at 445.77 74.93 0)
 		(effects
@@ -7520,6 +7550,16 @@
 			(justify left bottom)
 		)
 		(uuid "6cb6a9c1-bcf4-44d1-9b5a-eeb61ab139ad")
+	)
+	(label "PWR_IN"
+		(at 389.89 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6df3465b-575f-4269-ae4b-112d4d791a65")
 	)
 	(label "ACCEL_INT"
 		(at 132.08 133.35 180)
@@ -14346,8 +14386,13 @@
 		)
 	)
 	(sheet
+<<<<<<< HEAD
 		(at 405.13 124.46)
 		(size 29.21 24.13)
+=======
+		(at 398.78 124.46)
+		(size 41.91 24.13)
+>>>>>>> 90c9437 (Updated pwr labels and sheet pins)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14362,7 +14407,11 @@
 		)
 		(uuid "90b9ee1f-09cc-4b5a-82ab-b7ba82166c76")
 		(property "Sheetname" "PWR"
+<<<<<<< HEAD
 			(at 405.13 123.7484 0)
+=======
+			(at 398.78 123.7484 0)
+>>>>>>> 90c9437 (Updated pwr labels and sheet pins)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14371,7 +14420,11 @@
 			)
 		)
 		(property "Sheetfile" "PWR.kicad_sch"
+<<<<<<< HEAD
 			(at 405.13 149.1746 0)
+=======
+			(at 398.78 149.1746 0)
+>>>>>>> 90c9437 (Updated pwr labels and sheet pins)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14380,8 +14433,13 @@
 			)
 		)
 		(pin "PWR_IN" input
+<<<<<<< HEAD
 			(at 405.13 135.89 180)
 			(uuid "b3480f0c-4d9d-48bf-8e99-0f8055b193b8")
+=======
+			(at 398.78 137.16 180)
+			(uuid "a2b5fcf4-9160-4872-9f7b-7bf76453abad")
+>>>>>>> 90c9437 (Updated pwr labels and sheet pins)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14390,8 +14448,13 @@
 			)
 		)
 		(pin "PWR_OUT" output
+<<<<<<< HEAD
 			(at 434.34 135.89 0)
 			(uuid "9f64a631-9bab-410d-bc27-b07f75deaf62")
+=======
+			(at 440.69 137.16 0)
+			(uuid "c4336190-dbfe-4d37-bb45-2aabab9a1bb1")
+>>>>>>> 90c9437 (Updated pwr labels and sheet pins)
 			(effects
 				(font
 					(size 1.27 1.27)
