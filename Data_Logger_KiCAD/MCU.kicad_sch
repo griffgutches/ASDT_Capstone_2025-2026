@@ -5710,16 +5710,6 @@
 	)
 	(wire
 		(pts
-			(xy 396.24 80.01) (xy 402.59 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "556e54ba-fdc1-482b-825d-9c7f7aff0383")
-	)
-	(wire
-		(pts
 			(xy 269.24 80.01) (xy 275.59 80.01)
 		)
 		(stroke
@@ -5787,6 +5777,16 @@
 			(type default)
 		)
 		(uuid "5eebd52b-6ef7-45c9-9f41-38cafbc57f41")
+	)
+	(wire
+		(pts
+			(xy 393.7 71.12) (xy 402.59 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5eed61a1-2b0c-4278-b0a5-622d67ece1c6")
 	)
 	(wire
 		(pts
@@ -6792,16 +6792,6 @@
 	)
 	(wire
 		(pts
-			(xy 396.24 68.58) (xy 402.59 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e410f515-5802-41db-b66e-e6ab50f27726")
-	)
-	(wire
-		(pts
 			(xy 111.76 135.89) (xy 116.84 135.89)
 		)
 		(stroke
@@ -6869,6 +6859,16 @@
 			(type default)
 		)
 		(uuid "f1b86145-c82d-4df6-b3d4-8acd8b2e90a7")
+	)
+	(wire
+		(pts
+			(xy 393.7 77.47) (xy 402.59 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f296d7b1-44dd-44e3-913a-37f3ac4353c2")
 	)
 	(wire
 		(pts
@@ -7079,6 +7079,16 @@
 			(justify right bottom)
 		)
 		(uuid "25fe1f7b-7f06-45a6-9e79-324f64d94a3d")
+	)
+	(label "~{CSB_MS}"
+		(at 393.7 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "357efe2d-444f-4724-ab78-c9f7b1772397")
 	)
 	(label "MOSI"
 		(at 481.33 74.93 180)
@@ -7420,16 +7430,6 @@
 		)
 		(uuid "964eefa9-3364-4cf2-b277-478e0a970617")
 	)
-	(label "BMP_CS"
-		(at 396.24 68.58 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "97037d46-cdd9-4820-803e-89d7ec97a2d1")
-	)
 	(label "GPS_EXTINT"
 		(at 193.04 110.49 0)
 		(effects
@@ -7580,16 +7580,6 @@
 		)
 		(uuid "cd1b39f3-d20d-4a69-843a-304bb9afcad0")
 	)
-	(label "MS_CS"
-		(at 396.24 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cdead7a2-2db9-4be0-84b7-e1e1beb0443f")
-	)
 	(label "MAG_INT"
 		(at 481.33 69.85 180)
 		(effects
@@ -7609,6 +7599,16 @@
 			(justify right bottom)
 		)
 		(uuid "eb50e7e8-e0ac-4260-9399-69e7d6140ff9")
+	)
+	(label "~{CSB_BMP}"
+		(at 393.7 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ede58e0b-ac04-4bcd-9c5a-74afb5c3948a")
 	)
 	(label "~{RESET}"
 		(at 193.04 151.13 0)
@@ -13648,26 +13648,6 @@
 				(justify left top)
 			)
 		)
-		(pin "CSB_BMP" input
-			(at 402.59 68.58 180)
-			(uuid "ba726db2-2417-4975-96d6-d5eddd8a2aa0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "CSB_MS" input
-			(at 402.59 80.01 180)
-			(uuid "9822457f-352b-403f-9282-3119c127cd66")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "SCK" input
 			(at 440.69 69.85 0)
 			(uuid "169f8417-bf0b-4f84-adeb-a2b6bbb20f9a")
@@ -13696,6 +13676,26 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "~{CSB_BMP}" input
+			(at 402.59 71.12 180)
+			(uuid "e1023ddc-afa7-444f-be3f-df7d95be3fec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{CSB_MS}" input
+			(at 402.59 77.47 180)
+			(uuid "699fa1fa-aa2b-4d2f-a1f5-f3363a48b0b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

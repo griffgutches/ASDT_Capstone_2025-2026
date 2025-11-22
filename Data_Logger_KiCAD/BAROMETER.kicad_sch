@@ -1610,7 +1610,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "8c930bc3-6993-48d6-9d83-276ee299bfaa")
+			(uuid "e8a4b0aa-b7f3-4a6f-89f0-0848e931072b")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -1675,7 +1675,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "5d927218-62d0-4c38-b3e2-ac88a5f04cf3")
+			(uuid "68d1a0f3-821e-4886-b117-5aab3aa2ad96")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -1742,10 +1742,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3c4ff5ac-f06f-4994-98e7-e0a8aa404b5d")
+			(uuid "b3d9abb0-17b1-4cfd-91a5-b880a15c3f6f")
 		)
 		(pin "2"
-			(uuid "91915418-0d2d-4a0d-9718-22c96c6cee56")
+			(uuid "9b9ab7af-8ecd-4eca-8bf6-3dba90bb071f")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -1812,10 +1812,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d38abd73-7813-4757-8d0f-e796410c71a9")
+			(uuid "63da2d00-5a9f-4971-b204-d3ad9816b5ed")
 		)
 		(pin "2"
-			(uuid "af851b7c-3265-4f4c-b253-b92f853c6fd2")
+			(uuid "78697dbb-ab8b-4ae2-b5ec-4b111acfcbcd")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -1882,10 +1882,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7b628d5-7c11-4f06-ae34-731a614c6638")
+			(uuid "838ea099-c7c9-4014-aedd-585cff91127c")
 		)
 		(pin "2"
-			(uuid "04743304-af11-457c-9764-41e1701f8ab4")
+			(uuid "a1d724f5-7467-46d0-bd2c-042d1bd47b88")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -1952,10 +1952,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "70100050-52f7-4ab6-88a2-bd0b9ed19d37")
+			(uuid "409b2c34-cd05-46ef-93d0-622e6b25dc4f")
 		)
 		(pin "2"
-			(uuid "b3c82ed7-df9b-44c5-8119-08fdef200458")
+			(uuid "252d727f-e52d-4325-9631-d76b4f47b9d8")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -2022,28 +2022,28 @@
 			)
 		)
 		(pin "7"
-			(uuid "6f588fb5-3224-44d1-8ac9-52524aa364ee")
+			(uuid "c2d75367-34f1-4f7c-97c3-f355f6c3e1bc")
 		)
 		(pin "1"
-			(uuid "51953ab8-72a5-486e-8266-445618e675c2")
+			(uuid "afde2aea-f149-4a70-9d5f-ca6a8e8882cd")
 		)
 		(pin "4"
-			(uuid "e818868a-8f0a-4c4a-85de-77b455295327")
+			(uuid "6842f188-a543-44d7-a9ff-4ed64abf6781")
 		)
 		(pin "5"
-			(uuid "8994f273-b57a-4e03-8dc8-b83060e3d1c0")
+			(uuid "5af427ef-dc0b-4015-8b54-06a1cbc681ef")
 		)
 		(pin "6"
-			(uuid "9ba719d8-a3ae-417f-a727-c281e5ab37da")
+			(uuid "b836d0cc-034c-4caf-bb72-d5e5759689d8")
 		)
 		(pin "8"
-			(uuid "df244695-2830-43f8-99c2-85b221ef4e87")
+			(uuid "df7f7c09-2b19-498c-bc17-4e60b56fac09")
 		)
 		(pin "3"
-			(uuid "ffbf269d-80fe-4608-b0ad-c9ddf8d52381")
+			(uuid "3e4de873-b0d0-4294-bd17-e47160828b1a")
 		)
 		(pin "2"
-			(uuid "939d95c1-3cc4-4a5a-9de0-8cc9ba38a1a8")
+			(uuid "bf605089-e25b-4737-897d-72460fe6febd")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -2109,7 +2109,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "b5b08f62-c4f8-406d-99e6-5306342f2506")
+			(uuid "c42a0e8e-90cd-4915-8493-44c982527158")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -2304,34 +2304,34 @@
 			)
 		)
 		(pin "10"
-			(uuid "91072e3b-4679-4cbb-b6eb-7ee609da609d")
+			(uuid "8566ca3a-c403-4ccf-899b-e2cef9cd06a5")
 		)
 		(pin "6"
-			(uuid "50ecd7e8-2656-4f07-91ca-470dc6b70d93")
+			(uuid "02e21ff8-cb0d-4151-9169-f8ef453f156e")
 		)
 		(pin "8"
-			(uuid "7c6b6999-d6ce-4919-87df-dd6a4477d439")
+			(uuid "d0ec8336-64fb-4bd3-8ef8-5a4d3fe01748")
 		)
 		(pin "1"
-			(uuid "f34695dd-f65c-4762-9892-0ce4141406ea")
+			(uuid "ee3fdced-09eb-450f-a3b9-2337ad93da4e")
 		)
 		(pin "3"
-			(uuid "c3195fab-27f9-4511-900f-aded98b4d4a7")
+			(uuid "e615ba01-67ab-41a8-8922-0ac66abeb4ff")
 		)
 		(pin "7"
-			(uuid "07d98adc-68d4-4478-84bd-6a8aa87e078c")
+			(uuid "f8656bfa-1466-4a3f-9bbe-abe8411d5b1c")
 		)
 		(pin "5"
-			(uuid "c6993843-62ec-49d4-88ef-1ab1ad9152ca")
+			(uuid "9121da97-b9cb-4261-a3c2-2d6d0c116556")
 		)
 		(pin "9"
-			(uuid "ebce2a02-cf58-403d-b8d3-d6e138dc752d")
+			(uuid "fc5f886d-4e7b-471f-8595-182b11b2fa8a")
 		)
 		(pin "4"
-			(uuid "d2d4e5ec-e12f-432e-996a-39da5671297b")
+			(uuid "10fe3cb9-b4c9-4440-9eda-c392a8fafb23")
 		)
 		(pin "2"
-			(uuid "4ea12df0-7732-42c6-aa3d-e2dabe20c5b3")
+			(uuid "ded05921-e526-4f7d-8de2-0c0fe5fb5ba1")
 		)
 		(instances
 			(project "Data_Logger_Board"
@@ -2397,7 +2397,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "d122d1de-0d58-4781-880d-9d985f6c5389")
+			(uuid "4a2bfc29-2605-4376-ae08-ee249ca25929")
 		)
 		(instances
 			(project "Data_Logger_Board"

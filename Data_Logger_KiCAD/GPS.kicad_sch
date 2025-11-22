@@ -2330,7 +2330,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_LGA:LGA-8_3x5mm_P1.25mm"
+		(property "Footprint" "RF_GPS:ublox_MAX"
 			(at 132.08 92.71 0)
 			(effects
 				(font

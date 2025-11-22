@@ -1119,7 +1119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "002a061e-db34-4082-a4b5-e86a04468738")
-		(property "Reference" "C2"
+		(property "Reference" "C32"
 			(at 191.77 81.2799 0)
 			(effects
 				(font
@@ -1171,12 +1171,6 @@
 			(uuid "53ea1759-a73f-4a9d-b742-deda19af6129")
 		)
 		(instances
-			(project "MAGNETOMETER"
-				(path "/b7fc4674-3df6-4f05-a8d1-6eebc1d35db8"
-					(reference "C2")
-					(unit 1)
-				)
-			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/884971b6-34e3-480e-b770-6637cf2c2272"
 					(reference "C32")
@@ -1195,7 +1189,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1f51b48b-b20b-4b73-93fd-c8bbb4b10cf8")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR055"
 			(at 60.96 68.58 0)
 			(effects
 				(font
@@ -1243,12 +1237,6 @@
 			(uuid "8989b40b-6c06-4255-8f61-2a6de41da995")
 		)
 		(instances
-			(project "MAGNETOMETER"
-				(path "/b7fc4674-3df6-4f05-a8d1-6eebc1d35db8"
-					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/884971b6-34e3-480e-b770-6637cf2c2272"
 					(reference "#PWR055")
@@ -1267,7 +1255,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28612800-3998-4dfd-915b-790cf816ef65")
-		(property "Reference" "#PWR0102"
+		(property "Reference" "#PWR056"
 			(at 187.96 95.25 0)
 			(effects
 				(font
@@ -1315,12 +1303,6 @@
 			(uuid "e6174d6a-30b0-4d68-8b92-c024f44041f0")
 		)
 		(instances
-			(project "MAGNETOMETER"
-				(path "/b7fc4674-3df6-4f05-a8d1-6eebc1d35db8"
-					(reference "#PWR0102")
-					(unit 1)
-				)
-			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/884971b6-34e3-480e-b770-6637cf2c2272"
 					(reference "#PWR056")
@@ -1339,7 +1321,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "757c6206-becb-41ea-aac4-649031ee4050")
-		(property "Reference" "U1"
+		(property "Reference" "U11"
 			(at 135.89 52.07 0)
 			(effects
 				(font
@@ -1355,7 +1337,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MMC5983MA:MMC5983MA_MEM"
+		(property "Footprint" "footprints:MMC5983MA_MEM"
 			(at 100.33 62.23 0)
 			(effects
 				(font
@@ -1433,12 +1415,6 @@
 			(uuid "32b64fd4-b1df-4e8d-a27e-b6bc77eecc4d")
 		)
 		(instances
-			(project "MAGNETOMETER"
-				(path "/b7fc4674-3df6-4f05-a8d1-6eebc1d35db8"
-					(reference "U1")
-					(unit 1)
-				)
-			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/884971b6-34e3-480e-b770-6637cf2c2272"
 					(reference "U11")
@@ -1457,7 +1433,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe62da5d-a576-451b-a6c3-6b63c59a2ace")
-		(property "Reference" "C1"
+		(property "Reference" "C31"
 			(at 68.58 72.3899 0)
 			(effects
 				(font
@@ -1509,12 +1485,6 @@
 			(uuid "457db58e-57ed-4767-b84b-3ac5c17b8d8c")
 		)
 		(instances
-			(project "MAGNETOMETER"
-				(path "/b7fc4674-3df6-4f05-a8d1-6eebc1d35db8"
-					(reference "C1")
-					(unit 1)
-				)
-			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/884971b6-34e3-480e-b770-6637cf2c2272"
 					(reference "C31")
@@ -1523,10 +1493,4 @@
 			)
 		)
 	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
 )
