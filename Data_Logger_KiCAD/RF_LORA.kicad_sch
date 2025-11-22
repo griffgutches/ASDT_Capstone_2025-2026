@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "8ae4759a-151c-407c-bd9a-b8440b531f27")
 	(paper "A4")
+	(title_block
+		(title "ASDT RF LoRa Schematic")
+		(rev "1.2 Last Rev:11/22/2025")
+		(company "OSU ASDT")
+		(comment 1 "Author: John Fletcher")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
