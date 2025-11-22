@@ -2555,7 +2555,7 @@
 		)
 		(uuid "37e717f3-b301-4e02-9aaa-bc7ec4beef5a")
 	)
-	(hierarchical_label "CS_IMU"
+	(hierarchical_label "IMU_CS"
 		(shape input)
 		(at 88.9 59.69 0)
 		(effects
@@ -2577,7 +2577,7 @@
 		)
 		(uuid "717ba826-968a-4d52-9c7b-e1d63c0cd56c")
 	)
-	(hierarchical_label "SPC"
+	(hierarchical_label "SCK"
 		(shape input)
 		(at 91.44 52.07 0)
 		(effects
@@ -2599,7 +2599,7 @@
 		)
 		(uuid "9ced023d-990d-4056-83dc-5050f63aa622")
 	)
-	(hierarchical_label "SDO"
+	(hierarchical_label "MISO"
 		(shape output)
 		(at 99.06 57.15 0)
 		(effects
@@ -2643,7 +2643,7 @@
 		)
 		(uuid "bb1d6f17-5c09-4d52-8ba2-e1a20c944e1e")
 	)
-	(hierarchical_label "SDI"
+	(hierarchical_label "MOSI"
 		(shape input)
 		(at 91.44 54.61 0)
 		(effects
