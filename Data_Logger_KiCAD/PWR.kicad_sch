@@ -492,7 +492,7 @@
 		(uuid "dac727c4-6922-414d-b951-38bd09ee82d1")
 	)
 	(hierarchical_label "PWR_OUT"
-		(shape input)
+		(shape output)
 		(at 146.05 93.98 0)
 		(effects
 			(font
