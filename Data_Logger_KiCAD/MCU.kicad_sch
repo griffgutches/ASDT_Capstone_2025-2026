@@ -7371,6 +7371,16 @@
 		)
 		(uuid "25fe1f7b-7f06-45a6-9e79-324f64d94a3d")
 	)
+	(label "PWR_IN"
+		(at 397.51 135.89 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "280fa515-d314-4018-976b-b0e328a98d62")
+	)
 	(label "~{CSB_MS}"
 		(at 393.7 77.47 0)
 		(effects
@@ -7921,6 +7931,16 @@
 		)
 		(uuid "f98c8e98-3dcb-434f-be93-6bfdf559585f")
 	)
+	(label "PWR_OUT"
+		(at 441.96 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fdf9147e-4b83-41ff-8203-916abd1d34fa")
+	)
 	(label "BATTERY_SENSE"
 		(at 132.08 115.57 180)
 		(effects
@@ -8253,7 +8273,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 162.56 278.13 0)
 			(effects
 				(font
@@ -8272,6 +8292,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 162.56 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C8598"
 			(at 162.56 278.13 0)
 			(effects
 				(font
@@ -13110,7 +13139,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 147.32 278.13 0)
 			(effects
 				(font
@@ -13129,6 +13158,15 @@
 			)
 		)
 		(property "Description" "Schottky diode"
+			(at 147.32 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C8598"
 			(at 147.32 278.13 0)
 			(effects
 				(font

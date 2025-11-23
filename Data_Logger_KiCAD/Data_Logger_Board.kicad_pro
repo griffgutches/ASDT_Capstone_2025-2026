@@ -612,12 +612,6 @@
         },
         {
           "group_by": false,
-          "label": "LSCS",
-          "name": "LSCS",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "MANUFACTURER",
           "name": "MANUFACTURER",
           "show": false
@@ -710,6 +704,36 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PURCHASE-URL",
+          "name": "PURCHASE-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "AVAILABILITY",
+          "name": "AVAILABILITY",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DESCRIPTION",
+          "name": "DESCRIPTION",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PRICE",
+          "name": "PRICE",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PACKAGE",
+          "name": "PACKAGE",
           "show": false
         }
       ],
