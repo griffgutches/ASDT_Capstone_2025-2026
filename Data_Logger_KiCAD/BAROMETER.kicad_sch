@@ -1533,7 +1533,7 @@
 		)
 		(uuid "6f2719e5-97fc-4d7d-a1f9-afd46059a3e3")
 	)
-	(hierarchical_label "~{CSB_BMP}"
+	(hierarchical_label "~{BMP_CS}"
 		(shape input)
 		(at 40.64 116.84 180)
 		(effects
@@ -1544,7 +1544,7 @@
 		)
 		(uuid "708a079e-4640-4438-bd9b-ba2b3cb0ae6c")
 	)
-	(hierarchical_label "~{CSB_MS}"
+	(hierarchical_label "~{MS_CS}"
 		(shape input)
 		(at 45.72 48.26 180)
 		(effects
@@ -1741,6 +1741,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 105.41 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b3d9abb0-17b1-4cfd-91a5-b880a15c3f6f")
 		)
@@ -1803,6 +1812,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 123.19 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
 			(at 123.19 121.92 0)
 			(effects
 				(font
@@ -1881,6 +1899,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1525"
+			(at 86.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "838ea099-c7c9-4014-aedd-585cff91127c")
 		)
@@ -1951,6 +1978,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C52923"
+			(at 101.6 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "409b2c34-cd05-46ef-93d0-622e6b25dc4f")
 		)
@@ -2013,6 +2049,15 @@
 			)
 		)
 		(property "Description" "Barometric pressure sensor, 20cm resolution, 10 to 1200 mbar, I2C and SPI interface up to 20MHz, LGA-8"
+			(at 60.96 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C97627"
 			(at 60.96 43.18 0)
 			(effects
 				(font

@@ -566,19 +566,19 @@
           "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from BOM",
           "name": "${EXCLUDE_FROM_BOM}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
           "label": "Exclude from Board",
           "name": "${EXCLUDE_FROM_BOARD}",
-          "show": true
+          "show": false
         },
         {
           "group_by": true,
@@ -590,7 +590,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -796,10 +796,6 @@
     [
       "795ab2be-9db7-4254-b05c-ac2b60177344",
       "MCU"
-    ],
-    [
-      "c2c328e0-a6a2-4045-82d7-fe1ce93c1944",
-      "RF_WIFI"
     ],
     [
       "909dd632-2a0f-4e55-b8e6-044af71dac19",

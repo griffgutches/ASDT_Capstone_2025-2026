@@ -3049,6 +3049,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25076"
+			(at 196.85 129.54 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "613d79e5-3022-463a-978a-d0787c238320")
 		)
@@ -3617,7 +3626,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_CommonModeChoke_Coilcraft_0603USB"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 124.46 66.04 0)
 			(effects
 				(font
@@ -3637,6 +3646,15 @@
 		)
 		(property "Description" "Inductor"
 			(at 124.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C27151"
+			(at 124.46 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3791,7 +3809,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_CommonModeChoke_Coilcraft_0603USB"
+		(property "Footprint" "Inductor_SMD:L_0402_1005Metric"
 			(at 140.97 80.01 0)
 			(effects
 				(font
@@ -3810,6 +3828,15 @@
 			)
 		)
 		(property "Description" "Inductor"
+			(at 140.97 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C27151"
 			(at 140.97 80.01 0)
 			(effects
 				(font
@@ -3958,6 +3985,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 203.2 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1523"
 			(at 203.2 118.11 0)
 			(effects
 				(font
@@ -4185,6 +4221,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25076"
+			(at 196.85 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1e32eeae-cb8a-4603-9f59-5570360cc059")
 		)
@@ -4305,7 +4350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 121.6152 78.74 0)
 			(effects
 				(font
@@ -4324,6 +4369,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 120.65 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1622"
 			(at 120.65 74.93 0)
 			(effects
 				(font
@@ -4408,6 +4462,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1567"
+			(at 132.08 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "70926c12-f1b0-43d3-8ce5-e58442c496a3")
 		)
@@ -4439,8 +4502,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b156cbbb-839a-45ad-b97d-415f2b14e12a")
-		(property "Reference" "XTAL?"
-			(at 35.56 40.64 0)
+		(property "Reference" "XTAL3"
+			(at 36.195 40.64 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4448,7 +4511,7 @@
 			)
 		)
 		(property "Value" "NT2016SA-32M-END4263A"
-			(at 35.56 43.18 0)
+			(at 36.195 43.18 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -4505,7 +4568,7 @@
 			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
-					(reference "XTAL?")
+					(reference "XTAL3")
 					(unit 1)
 				)
 			)
@@ -4639,6 +4702,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C52923"
+			(at 133.35 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0cd7f1ed-74cb-4c13-af48-40cbdcf59465")
 		)
@@ -4707,6 +4779,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 111.76 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1525"
 			(at 111.76 43.18 0)
 			(effects
 				(font
@@ -4856,6 +4937,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 203.2 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1523"
 			(at 203.2 134.62 0)
 			(effects
 				(font

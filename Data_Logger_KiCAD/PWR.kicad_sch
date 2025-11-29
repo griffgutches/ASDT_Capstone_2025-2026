@@ -566,6 +566,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C6186"
+			(at 116.84 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "dc46be92-d5f6-402a-82f4-2947169a1ae3")
 		)

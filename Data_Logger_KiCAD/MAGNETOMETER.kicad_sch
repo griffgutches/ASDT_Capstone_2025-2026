@@ -1164,6 +1164,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C15525"
+			(at 187.96 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e8410c84-9f99-490c-87c1-a05f704cc07e")
 		)
@@ -1470,6 +1479,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 64.77 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
 			(at 64.77 73.66 0)
 			(effects
 				(font
