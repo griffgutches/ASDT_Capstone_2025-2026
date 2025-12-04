@@ -4827,7 +4827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d222f265-f68f-4f07-943f-f1596bd34520")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0102"
 			(at 19.05 66.04 0)
 			(effects
 				(font
@@ -4884,7 +4884,7 @@
 			)
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
-					(reference "#PWR?")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)

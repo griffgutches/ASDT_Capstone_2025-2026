@@ -603,7 +603,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2eb6ab76-3f0c-43a7-901b-cc889ddc4f54")
-		(property "Reference" "Cee"
+		(property "Reference" "C99"
 			(at 138.43 96.5199 0)
 			(effects
 				(font
@@ -666,7 +666,7 @@
 		(instances
 			(project ""
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/90b9ee1f-09cc-4b5a-82ab-b7ba82166c76"
-					(reference "Cee")
+					(reference "C99")
 					(unit 1)
 				)
 			)
