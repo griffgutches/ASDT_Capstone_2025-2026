@@ -189,7 +189,9 @@
       "track_widths": [
         0.0,
         0.1565,
-        0.3
+        0.2,
+        0.3,
+        0.4
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -550,6 +552,14 @@
       {
         "netclass": "smaller_wire",
         "pattern": "/MCU/~{HIGHG_CS}"
+      },
+      {
+        "netclass": "usb",
+        "pattern": "/MCU/USB_D+"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/MCU/BATTERY_SENSE"
       }
     ]
   },
