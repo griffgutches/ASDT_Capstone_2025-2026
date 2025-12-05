@@ -1484,7 +1484,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "custom:YG0043AA"
 			(at 151.13 64.77 0)
 			(effects
 				(font

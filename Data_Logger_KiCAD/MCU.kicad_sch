@@ -4923,6 +4923,16 @@
 		)
 		(uuid "0a9ed046-f6bf-4650-8f8d-854749fda6c9")
 	)
+	(text "Correct buzzer footprint if needed"
+		(exclude_from_sim no)
+		(at 58.928 338.582 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "132eaae3-d77b-4877-a16a-8b84d03b4b59")
+	)
 	(text "Buzzer"
 		(exclude_from_sim no)
 		(at 25.654 335.788 0)
@@ -9929,7 +9939,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Buzzer_Beeper:Buzzer_Murata_PKMCS0909E"
 			(at 59.055 349.25 90)
 			(effects
 				(font
