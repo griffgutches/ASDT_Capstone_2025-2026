@@ -2190,7 +2190,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BMP390L:XDCR_BMP390L"
+		(property "Footprint" "custom:XDCR_BMP390L"
 			(at 64.77 121.92 0)
 			(effects
 				(font

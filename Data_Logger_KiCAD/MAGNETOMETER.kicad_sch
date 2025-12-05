@@ -1346,7 +1346,7 @@
 				)
 			)
 		)
-		(property "Footprint" "footprints:MMC5983MA_MEM"
+		(property "Footprint" "custom:MMC5983MA_MEM"
 			(at 100.33 62.23 0)
 			(effects
 				(font

@@ -4518,7 +4518,7 @@
 				)
 			)
 		)
-		(property "Footprint" "NT2016Footprints:NT2016SA-32M-END4263A_NDK"
+		(property "Footprint" "custom:NT2016SA-32M-END4263A_NDK"
 			(at 15.24 50.8 0)
 			(effects
 				(font
