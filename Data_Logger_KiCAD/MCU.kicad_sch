@@ -5270,12 +5270,6 @@
 		(color 0 0 0 0)
 		(uuid "e90795d7-6303-48b4-9e2e-ea40e27fac3e")
 	)
-	(junction
-		(at 49.53 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e97a8b2f-3c34-4a7f-b071-32106c400643")
-	)
 	(no_connect
 		(at 55.88 97.79)
 		(uuid "1d7c533d-49d4-4436-ba13-6a0205c11460")
@@ -5410,7 +5404,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 135.89) (xy 49.53 135.89)
+			(xy 46.99 135.89) (xy 53.34 135.89)
 		)
 		(stroke
 			(width 0)
@@ -5697,16 +5691,6 @@
 			(type default)
 		)
 		(uuid "2f3b3ea0-1daf-49dc-84b6-64b21ef54c13")
-	)
-	(wire
-		(pts
-			(xy 49.53 134.62) (xy 49.53 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f5a2127-d2ef-4c8c-a438-af3dda3ffd18")
 	)
 	(wire
 		(pts
@@ -6692,16 +6676,6 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 135.89) (xy 53.34 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6337646-0298-4607-bbd9-d50793a2eab5")
-	)
-	(wire
-		(pts
 			(xy 53.34 135.89) (xy 53.34 139.7)
 		)
 		(stroke
@@ -7490,6 +7464,16 @@
 		)
 		(uuid "3b9f0dca-2aa4-4edc-b607-2ca1acea63ad")
 	)
+	(label "PWR_IN"
+		(at 46.99 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3d70fe2e-8fde-4724-9f71-f55d11a9cf4d")
+	)
 	(label "SCK"
 		(at 147.32 229.87 180)
 		(effects
@@ -7558,7 +7542,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5acea40d-81d5-45d6-8d0c-9ae1981e00be")
+		(uuid "5acea40d-81d5-45d6-8d0c-9ae1981e00bf")
 	)
 	(label "ACCEL_INT"
 		(at 147.32 240.03 180)
@@ -7688,7 +7672,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "778d262d-e7a2-4773-8e39-df64acdce424")
+		(uuid "778d262d-e7a2-4773-8e39-df64acdce425")
 	)
 	(label "SD_DAT0"
 		(at 261.62 186.69 180)
@@ -7698,7 +7682,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "778d262d-e7a2-4773-8e39-df64acdce424")
+		(uuid "778d262d-e7a2-4773-8e39-df64acdce426")
 	)
 	(label "SD_DAT1"
 		(at 261.62 189.23 180)
@@ -7708,7 +7692,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "778d262d-e7a2-4773-8e39-df64acdce424")
+		(uuid "778d262d-e7a2-4773-8e39-df64acdce427")
 	)
 	(label "XTAL_32K_P"
 		(at 43.18 247.65 180)
@@ -13117,72 +13101,6 @@
 			(project ""
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344"
 					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 49.53 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cad997f3-64c6-449c-8b3e-f6b81be14841")
-		(property "Reference" "#PWR021"
-			(at 49.53 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 49.53 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 49.53 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0367de0a-5df3-4111-8b3f-62b86172c0d6")
-		)
-		(instances
-			(project ""
-				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344"
-					(reference "#PWR021")
 					(unit 1)
 				)
 			)

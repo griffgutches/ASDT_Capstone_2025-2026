@@ -1346,7 +1346,7 @@
 				)
 			)
 		)
-		(property "Footprint" "custom:MMC5983MA_MEM"
+		(property "Footprint" "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y"
 			(at 100.33 62.23 0)
 			(effects
 				(font
