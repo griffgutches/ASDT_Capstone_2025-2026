@@ -1013,8 +1013,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "BZ"
-				(at 3.81 1.27 0)
+			(property "Reference" "BZ1"
+				(at 3.81 1.2701 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1023,7 +1023,7 @@
 				)
 			)
 			(property "Value" "Buzzer"
-				(at 3.81 -1.27 0)
+				(at 3.81 -1.2699 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1031,7 +1031,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "custom:CUI_CMT-4023S-SMT-TR"
 				(at -0.635 2.54 90)
 				(effects
 					(font
@@ -1137,7 +1137,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "P"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1155,7 +1155,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "N"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10162,7 +10162,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Buzzer_Beeper:Buzzer_Murata_PKMCS0909E"
+		(property "Footprint" "custom:CUI_CMT-4023S-SMT-TR"
 			(at 59.055 349.25 90)
 			(effects
 				(font
@@ -10189,10 +10189,10 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
+		(pin "N"
 			(uuid "36b7dc44-21a8-4278-84c1-21dc602c3774")
 		)
-		(pin "2"
+		(pin "P"
 			(uuid "de3a8e2d-bdd7-4c2d-b04f-ae701fec810f")
 		)
 		(instances
