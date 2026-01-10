@@ -16380,6 +16380,18 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/RF_Antenna.3dshapes/Molex_47948-0001_2.4Ghz.step"
+			(hide yes)
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+		(model "${KIPRJMOD}/3DModels/0479480001.step"
 			(offset
 				(xyz 0 0 0)
 			)
