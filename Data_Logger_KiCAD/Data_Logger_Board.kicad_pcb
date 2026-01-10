@@ -15441,6 +15441,17 @@
 			(uuid "0e1b4b62-0e0c-4dbc-8256-1bd3198edd21")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3DModels/NT2016SA-32M-END4263A_NDK.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 	)
 	(footprint "Inductor_SMD:L_0402_1005Metric"
 		(layer "F.Cu")
