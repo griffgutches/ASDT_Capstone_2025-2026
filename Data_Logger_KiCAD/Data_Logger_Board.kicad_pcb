@@ -645,15 +645,15 @@
 			(uuid "05821b9f-0160-4d4a-9b14-5d72fd722239")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/TerminalBlock.3dshapes/TerminalBlock_Xinya_XY308-2.54-2P_1x02_P2.54mm_Horizontal.step"
+		(model "${KIPRJMOD}/3DModels/691210910002+%28rev1%29.stp"
 			(offset
-				(xyz 0 0 0)
+				(xyz 1.25 0 2.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -3466,7 +3466,7 @@
 			(effects
 				(font
 					(size 0.32 0.32)
-					(thickness 0.15)
+					(thickness 0.08)
 				)
 			)
 		)
@@ -3478,7 +3478,7 @@
 			(effects
 				(font
 					(size 0.32 0.32)
-					(thickness 0.15)
+					(thickness 0.08)
 				)
 			)
 		)
@@ -3973,6 +3973,17 @@
 			(uuid "299e13ba-2ed0-4f48-b160-b29493125378")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3DModels/BMP390L.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
@@ -10379,7 +10390,7 @@
 			(uuid "1db5786a-efe2-4322-9deb-d5e8992b55af")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/RF_GPS.3dshapes/ublox_MAX.step"
+		(model "${KIPRJMOD}/3DModels/MAX-M10S-00B.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10387,7 +10398,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
