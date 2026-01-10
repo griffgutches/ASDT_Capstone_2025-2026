@@ -22846,6 +22846,17 @@
 			(uuid "e1df631c-5e49-425b-b733-0552ebaec069")
 		)
 		(embedded_fonts no)
+		(model "${KIPRJMOD}/3DModels/Same_Sky_CMT-4023S-SMT-TR.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -0 -0 -90)
+			)
+		)
 	)
 	(footprint "Connector_Card:microSD_HC_Molex_47219-2001"
 		(layer "B.Cu")
@@ -23212,7 +23223,7 @@
 			(uuid "076f3311-9a82-42d5-8e21-acce6890c3a4")
 		)
 		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Connector_Card.3dshapes/microSD_HC_Molex_47219-2001.step"
+		(model "${KIPRJMOD}/3DModels/472192001.stp"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -23220,7 +23231,7 @@
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -90 -0 -0)
 			)
 		)
 	)
@@ -25087,7 +25098,7 @@
 			(uuid "bd75e6dc-6291-4948-8d20-d02982e72160")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/3dmodels/YG0043AA.STEP"
+		(model "${KIPRJMOD}/3DModels/YG0043AA.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
