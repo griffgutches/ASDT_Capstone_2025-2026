@@ -7794,6 +7794,16 @@
 		)
 		(uuid "85cf0e81-9090-4097-8ea0-fa8c21cc2f18")
 	)
+	(label "USB_D_OUT-"
+		(at 124.46 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8637f3df-f8d7-4ec1-84be-8378fe5627db")
+	)
 	(label "SCK"
 		(at 132.08 130.81 180)
 		(effects
@@ -7893,6 +7903,16 @@
 			(justify right bottom)
 		)
 		(uuid "964eefa9-3364-4cf2-b277-478e0a970617")
+	)
+	(label "USB_D_OUT+"
+		(at 124.46 138.43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a0c0673-06fd-4047-8dc9-bc48fe7768d8")
 	)
 	(label "GPS_EXTINT"
 		(at 193.04 110.49 0)
