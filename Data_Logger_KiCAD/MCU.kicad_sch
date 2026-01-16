@@ -7712,7 +7712,7 @@
 		)
 		(uuid "3b9f0dca-2aa4-4edc-b607-2ca1acea63ad")
 	)
-	(label "PWR_IN"
+	(label "+BATT"
 		(at 46.99 135.89 0)
 		(effects
 			(font
