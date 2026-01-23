@@ -2555,7 +2555,7 @@
 		)
 		(uuid "37e717f3-b301-4e02-9aaa-bc7ec4beef5a")
 	)
-	(hierarchical_label "IMU_CS"
+	(hierarchical_label "~{IMU_CS}"
 		(shape input)
 		(at 88.9 59.69 0)
 		(effects

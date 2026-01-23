@@ -7829,7 +7829,7 @@
 		)
 		(uuid "280fa515-d314-4018-976b-b0e328a98d62")
 	)
-	(label "RADIO_INT"
+	(label "~{ACCEL_CS}"
 		(at 193.04 133.35 0)
 		(effects
 			(font
@@ -8109,7 +8109,7 @@
 		)
 		(uuid "78918e3b-85cd-425f-8aaa-c76216be10a4")
 	)
-	(label "~{IMU_CS}"
+	(label "RADIO_BUSY"
 		(at 132.08 107.95 180)
 		(effects
 			(font
@@ -8139,7 +8139,7 @@
 		)
 		(uuid "7bcbb28c-6fd0-4009-b4ce-bdfcb988a533")
 	)
-	(label "IMU_CS"
+	(label "~{IMU_CS}"
 		(at 130.81 223.52 180)
 		(effects
 			(font
@@ -8369,7 +8369,7 @@
 		)
 		(uuid "a38a1a40-d91d-4fe6-8a9d-11e679cd6d5c")
 	)
-	(label "RADIO_BUSY"
+	(label "~{IMU_CS}"
 		(at 193.04 135.89 0)
 		(effects
 			(font
@@ -8509,7 +8509,7 @@
 		)
 		(uuid "d6fece40-e956-4319-8550-68c9dcda4b80")
 	)
-	(label "~{ACCEL_CS}"
+	(label "RADIO_INT"
 		(at 132.08 125.73 180)
 		(effects
 			(font
@@ -15258,9 +15258,9 @@
 				(justify left)
 			)
 		)
-		(pin "IMU_CS" input
+		(pin "~{IMU_CS}" input
 			(at 137.16 223.52 180)
-			(uuid "66846bea-9850-4e64-8ab1-a02e7eceac2e")
+			(uuid "55a75cdc-554c-4caa-87eb-3e38d76f927f")
 			(effects
 				(font
 					(size 1.27 1.27)
