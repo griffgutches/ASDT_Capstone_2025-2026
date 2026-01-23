@@ -26752,7 +26752,7 @@
 		(layer "Cmts.User")
 		(uuid "b4c79d08-6275-4699-923e-e02638880c95")
 		(pts
-			(xy 165.04 44.911906) (xy 164.94 108.711906)
+			(xy 164.94 46.5) (xy 164.94 108.711906)
 		)
 		(height -6.46)
 		(format
@@ -26772,8 +26772,8 @@
 			(extension_offset 0.5)
 			(keep_text_aligned yes)
 		)
-		(gr_text "63.8001"
-			(at 170.299993 76.820228 89.91019478)
+		(gr_text "62.2119"
+			(at 170.25 77.605953 90)
 			(layer "Cmts.User")
 			(uuid "b4c79d08-6275-4699-923e-e02638880c95")
 			(effects
