@@ -144,6 +144,157 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -2009,28 +2160,22 @@
 		)
 	)
 	(junction
+		(at 83.82 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1072863f-39b6-48ff-b391-3b49d99a19a7")
+	)
+	(junction
 		(at 96.52 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "183a064e-81f8-4f43-b01c-75cf0859c43f")
 	)
 	(junction
-		(at 104.14 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a9dfc0f-3b9f-4b9b-b9fe-b979a5e1d026")
-	)
-	(junction
 		(at 203.2 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4045d986-77f2-4cb7-ba39-909184a799f8")
-	)
-	(junction
-		(at 77.47 38.1)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6541a600-d17f-492f-b0d5-d42a76c742b1")
 	)
 	(junction
 		(at 132.08 69.85)
@@ -2048,7 +2193,7 @@
 		(at 83.82 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9a71debc-ed4f-4ebc-9b9e-8263a018a61d")
+		(uuid "a26496ec-bbc6-4b50-98fc-8c883055eddb")
 	)
 	(junction
 		(at 24.13 52.07)
@@ -2116,7 +2261,17 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 29.21) (xy 83.82 38.1)
+			(xy 83.82 30.48) (xy 77.47 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ab797c0-a495-4133-bdfe-e7252d491deb")
+	)
+	(wire
+		(pts
+			(xy 83.82 29.21) (xy 83.82 30.48)
 		)
 		(stroke
 			(width 0)
@@ -2173,16 +2328,6 @@
 			(type default)
 		)
 		(uuid "1c6f862b-b852-4d72-94b6-b260eb653e38")
-	)
-	(wire
-		(pts
-			(xy 77.47 36.83) (xy 77.47 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1fb9c5cb-1676-45d6-94eb-23bb17a82011")
 	)
 	(wire
 		(pts
@@ -2296,6 +2441,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 27.94) (xy 77.47 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38651f5b-3154-4a6d-9831-acf854fdd0d3")
+	)
+	(wire
+		(pts
 			(xy 24.13 52.07) (xy 24.13 55.88)
 		)
 		(stroke
@@ -2303,6 +2458,16 @@
 			(type default)
 		)
 		(uuid "3e280579-8429-4cfb-8b0f-3606039f99ab")
+	)
+	(wire
+		(pts
+			(xy 83.82 36.83) (xy 83.82 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46d41835-0ff6-4ca8-ac4a-cf75a12bba15")
 	)
 	(wire
 		(pts
@@ -2376,16 +2541,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 38.1) (xy 111.76 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6708d823-b8e2-4255-994e-6fd7ba5ebc08")
-	)
-	(wire
-		(pts
 			(xy 203.2 113.03) (xy 213.36 113.03)
 		)
 		(stroke
@@ -2413,16 +2568,6 @@
 			(type default)
 		)
 		(uuid "6f954079-d880-4ffe-831e-57c6b2ac832c")
-	)
-	(wire
-		(pts
-			(xy 104.14 38.1) (xy 96.52 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fcc8622-4b36-497c-acfd-2d954c6d2c0b")
 	)
 	(wire
 		(pts
@@ -2506,13 +2651,13 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 38.1) (xy 83.82 38.1)
+			(xy 96.52 38.1) (xy 104.14 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89dda787-170b-4bcf-accd-8aa623465c4d")
+		(uuid "9079043d-84f0-4939-af6b-78696f570808")
 	)
 	(wire
 		(pts
@@ -2576,6 +2721,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 30.48) (xy 111.76 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3454f51-fd2f-4c41-b3a6-7a47d620ac6b")
+	)
+	(wire
+		(pts
 			(xy 167.64 83.82) (xy 187.96 83.82)
 		)
 		(stroke
@@ -2623,6 +2778,16 @@
 			(type default)
 		)
 		(uuid "c06adc9b-9fda-409d-b1e6-e0f8dee27789")
+	)
+	(wire
+		(pts
+			(xy 83.82 38.1) (xy 96.52 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2c936f1-a8ab-4d9c-8d7f-b8b1bd1e0d39")
 	)
 	(wire
 		(pts
@@ -2686,16 +2851,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 38.1) (xy 111.76 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0b958f4-68ad-4b5a-a976-2a8830637172")
-	)
-	(wire
-		(pts
 			(xy 128.27 66.04) (xy 130.81 66.04)
 		)
 		(stroke
@@ -2723,6 +2878,26 @@
 			(type default)
 		)
 		(uuid "d6b58b8d-f42e-4180-80db-0134f79601cc")
+	)
+	(wire
+		(pts
+			(xy 83.82 30.48) (xy 111.76 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7efd390-d9a0-4256-afae-922817b2f578")
+	)
+	(wire
+		(pts
+			(xy 83.82 30.48) (xy 83.82 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8142bd3-b388-4a20-aea1-81c6450f0bd8")
 	)
 	(wire
 		(pts
@@ -2923,7 +3098,7 @@
 	)
 	(hierarchical_label "VDD_Radio"
 		(shape input)
-		(at 77.47 36.83 90)
+		(at 77.47 27.94 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4978,6 +5153,83 @@
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 83.82 34.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c67e95a0-d7fa-470c-8aca-dc9ea0ea22d6")
+		(property "Reference" "FB1"
+			(at 80.518 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FerriteBead_Small"
+			(at 80.01 34.3281 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 85.598 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 83.82 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" " C14709"
+			(at 83.82 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a655f5b9-65b4-4df9-b358-a725083cebd0")
+		)
+		(pin "1"
+			(uuid "896344b3-1fb1-488a-9d63-6d40b80a0a33")
+		)
+		(instances
+			(project "Data_Logger_Board"
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
