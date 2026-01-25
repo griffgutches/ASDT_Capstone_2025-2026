@@ -2035,12 +2035,6 @@
 		)
 	)
 	(junction
-		(at 83.82 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1072863f-39b6-48ff-b391-3b49d99a19a7")
-	)
-	(junction
 		(at 96.52 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2075,6 +2069,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ab404e73-9895-40db-b33b-c423fd244b04")
+	)
+	(junction
+		(at 104.14 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7f533ee-0da0-4f2c-b14a-3933e3c77c87")
 	)
 	(junction
 		(at 203.2 129.54)
@@ -2266,6 +2266,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 38.1) (xy 111.76 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cf04d81-b3de-4bc7-979f-6dce4e92cb4b")
+	)
+	(wire
+		(pts
 			(xy 83.82 73.66) (xy 71.12 73.66)
 		)
 		(stroke
@@ -2343,6 +2353,16 @@
 			(type default)
 		)
 		(uuid "47156ffa-d14b-4fcf-b720-0075d0a3b433")
+	)
+	(wire
+		(pts
+			(xy 111.76 38.1) (xy 111.76 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "484d3f36-0890-4131-a2b3-595fbdfd11c3")
 	)
 	(wire
 		(pts
@@ -2586,16 +2606,6 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 30.48) (xy 111.76 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b3454f51-fd2f-4c41-b3a6-7a47d620ac6b")
-	)
-	(wire
-		(pts
 			(xy 167.64 83.82) (xy 187.96 83.82)
 		)
 		(stroke
@@ -2743,16 +2753,6 @@
 			(type default)
 		)
 		(uuid "d6b58b8d-f42e-4180-80db-0134f79601cc")
-	)
-	(wire
-		(pts
-			(xy 83.82 30.48) (xy 111.76 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e7efd390-d9a0-4256-afae-922817b2f578")
 	)
 	(wire
 		(pts
@@ -2993,6 +2993,99 @@
 			(justify right)
 		)
 		(uuid "a4f6dcfc-f358-4be5-b1cd-ec6da7904b9e")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 121.92 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "666f0e18-5a46-4b44-a582-4fdda9e46919")
+		(property "Netclass" "RF_50_SE"
+			(at 122.6185 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 50.8 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 173.99 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94493f6b-2f85-4a3b-ad8d-1a534ba0a0e1")
+		(property "Netclass" "RF_50_SE"
+			(at 174.6885 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 100.33 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 223.52 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e196f96-2ecd-48c5-a676-e8535d79e48f")
+		(property "Netclass" "RF_50_SE"
+			(at 224.2185 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 87.63 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
