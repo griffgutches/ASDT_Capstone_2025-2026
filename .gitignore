@@ -1,5 +1,10 @@
-*.zip
+*autosave*
+*cache*
 *.lck
-*#auto_saved_files#
-*/fp-info-cache
-
+*backups
+\#auto_saved_files#
+fab-files
+fabrication-toolkit-options.json
+production
+**.bak
+todo.md
