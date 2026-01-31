@@ -2446,16 +2446,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 68.58) (xy 83.82 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f954079-d880-4ffe-831e-57c6b2ac832c")
-	)
-	(wire
-		(pts
 			(xy 120.65 69.85) (xy 120.65 71.12)
 		)
 		(stroke
@@ -2526,6 +2516,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 55.88) (xy 68.58 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82e4dc2f-b3b8-44db-a659-2988db2ea685")
+	)
+	(wire
+		(pts
 			(xy 93.98 55.88) (xy 93.98 43.18)
 		)
 		(stroke
@@ -2543,6 +2543,16 @@
 			(type default)
 		)
 		(uuid "9079043d-84f0-4939-af6b-78696f570808")
+	)
+	(wire
+		(pts
+			(xy 68.58 68.58) (xy 83.82 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92736065-7c09-434a-9f73-f92aa0927a8c")
 	)
 	(wire
 		(pts
@@ -2864,16 +2874,6 @@
 		)
 		(uuid "6c904508-ed8b-47e3-9f7f-599862478071")
 	)
-	(label "XTA"
-		(at 60.96 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8bba7e67-ea92-4646-9680-f3a0c81516f6")
-	)
 	(label "DIO2"
 		(at 71.12 83.82 180)
 		(effects
@@ -3177,7 +3177,7 @@
 				)
 			)
 		)
-		(property "Value" "1n"
+		(property "Value" "10p"
 			(at 52.07 52.324 90)
 			(effects
 				(font
@@ -5255,6 +5255,74 @@
 			(project "Data_Logger_Board"
 				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
 					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 64.77 55.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "daf8963f-92be-4e22-8caf-ccce38023aeb")
+		(property "Reference" "R19"
+			(at 64.77 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 64.77 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 64.77 57.658 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 64.77 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19ff224f-afea-4dd7-b671-675b8c6901b1")
+		)
+		(pin "2"
+			(uuid "09a347d4-8b42-48d5-981e-b9999849507e")
+		)
+		(instances
+			(project ""
+				(path "/db968e42-3ace-4cc9-9096-9d8f48135c40/795ab2be-9db7-4254-b05c-ac2b60177344/ddd17302-66df-4ba5-8c9c-bee0e050b0e0"
+					(reference "R19")
 					(unit 1)
 				)
 			)
