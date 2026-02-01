@@ -1522,6 +1522,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 87.63 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "168cf233-2fb7-4689-9a75-f0316384390e")
 		)
@@ -1591,6 +1600,15 @@
 			)
 		)
 		(property "digikey" "https://www.digikey.com/en/products/detail/molex/0472192001/3044807"
+			(at 140.97 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C164170"
 			(at 140.97 67.31 0)
 			(effects
 				(font
@@ -1835,6 +1853,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 102.87 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "39ec3bfb-87ef-4b74-a6cf-40751d0dda7c")
 		)
@@ -1905,6 +1932,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C25744"
+			(at 110.49 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1d2e342f-c92c-4aef-96f9-a30c3944bad8")
 		)
@@ -1967,6 +2003,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 80.01 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
 			(at 80.01 54.61 0)
 			(effects
 				(font
@@ -2247,6 +2292,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 72.39 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
 			(at 72.39 54.61 0)
 			(effects
 				(font

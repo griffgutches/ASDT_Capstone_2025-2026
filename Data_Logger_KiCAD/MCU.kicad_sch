@@ -8693,12 +8693,12 @@
 		(uuid "ce9a0a35-9084-46d5-95d2-3077fec886c5")
 	)
 	(label "SMA_CONN"
-		(at 269.24 77.47 0)
+		(at 269.24 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "cfea81bd-c90c-4798-9d58-09131f23a928")
 	)
@@ -9369,7 +9369,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "1k"
 			(at 175.26 62.23 90)
 			(effects
 				(font
@@ -9404,7 +9404,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25867"
+		(property "LCSC" "C11702"
 			(at 175.26 64.77 90)
 			(effects
 				(font
@@ -11104,7 +11104,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2290"
+		(property "LCSC" ""
 			(at 106.68 105.41 90)
 			(effects
 				(font
@@ -12437,7 +12437,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2290"
+		(property "LCSC" ""
 			(at 180.34 68.58 90)
 			(effects
 				(font
@@ -13403,7 +13403,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "1k"
 			(at 114.3 97.79 90)
 			(effects
 				(font
@@ -13438,7 +13438,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25867"
+		(property "LCSC" "C11702"
 			(at 114.3 100.33 90)
 			(effects
 				(font
