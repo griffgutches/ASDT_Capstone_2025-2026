@@ -11270,7 +11270,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "White"
+		(property "Value" "Yellow"
 			(at 110.49 108.2674 90)
 			(effects
 				(font
