@@ -5489,16 +5489,6 @@
 		)
 		(uuid "5d803ebd-d9db-4918-b179-e52042aba6a9")
 	)
-	(text "100n 1u here"
-		(exclude_from_sim no)
-		(at 69.088 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "667eb088-10e0-46c2-92d4-11e6675533ad")
-	)
 	(text "BATTERY CONNECTOR\n"
 		(exclude_from_sim no)
 		(at 32.512 122.428 0)
@@ -8135,7 +8125,7 @@
 		)
 		(uuid "3b9f0dca-2aa4-4edc-b607-2ca1acea63ad")
 	)
-	(label "+BATT"
+	(label "PWR_IN"
 		(at 46.99 135.89 0)
 		(effects
 			(font
@@ -11270,7 +11260,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Yellow"
+		(property "Value" "White"
 			(at 110.49 108.2674 90)
 			(effects
 				(font
