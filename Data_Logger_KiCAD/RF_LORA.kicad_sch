@@ -4727,6 +4727,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1523"
+			(at 214.63 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7a91bc22-8d12-4626-8fe9-266b41e218ce")
 		)
@@ -4788,6 +4797,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 179.07 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1523"
+			(at 179.07 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4940,6 +4958,15 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 179.07 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1523"
+			(at 179.07 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
