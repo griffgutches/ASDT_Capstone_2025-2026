@@ -124,6 +124,7 @@
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting front back)
+		(aux_axis_origin 120.761522 111.138478)
 		(grid_origin 120 47.1)
 		(pcbplotparams
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
@@ -9003,7 +9004,7 @@
 				)
 			)
 		)
-		(property "Value" "100 nF"
+		(property "Value" "100n"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11427,7 +11428,7 @@
 				)
 			)
 		)
-		(property "Value" "24nH"
+		(property "Value" "24n"
 			(at -0.161775 0.590963 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -19559,7 +19560,7 @@
 				)
 			)
 		)
-		(property "Value" "2nH"
+		(property "Value" "2n"
 			(at 0 1.17 45)
 			(layer "F.Fab")
 			(hide yes)
@@ -21993,7 +21994,7 @@
 				)
 			)
 		)
-		(property "Value" "100 nF"
+		(property "Value" "100n"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -23004,7 +23005,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 0 1.16 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23217,7 +23218,7 @@
 				)
 			)
 		)
-		(property "Value" "100 nF"
+		(property "Value" "100n"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -23838,7 +23839,7 @@
 				)
 			)
 		)
-		(property "Value" "1 uF"
+		(property "Value" "1u"
 			(at 0 1.16 90)
 			(layer "F.Fab")
 			(hide yes)

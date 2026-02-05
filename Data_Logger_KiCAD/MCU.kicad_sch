@@ -13288,7 +13288,7 @@
 				)
 			)
 		)
-		(property "Value" "24nH"
+		(property "Value" "24n"
 			(at 58.42 294.64 90)
 			(effects
 				(font
@@ -13572,7 +13572,7 @@
 				)
 			)
 		)
-		(property "Value" "2nH"
+		(property "Value" "2n"
 			(at 121.92 62.23 90)
 			(effects
 				(font
