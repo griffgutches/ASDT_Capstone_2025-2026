@@ -553,6 +553,12 @@
       ],
       "Net-(FL2-OUT)": [
         "RF_50_SE"
+      ],
+      "Net-(U7-RF1)": [
+        "RF_50_SE"
+      ],
+      "Net-(U7-RFC)": [
+        "RF_50_SE"
       ]
     },
     "netclass_patterns": []

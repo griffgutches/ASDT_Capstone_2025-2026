@@ -2059,12 +2059,6 @@
 		(uuid "8516b2de-0c26-4610-a808-297f4e0845e9")
 	)
 	(junction
-		(at 167.64 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "87006388-49a3-4f52-bcd6-3498350fd224")
-	)
-	(junction
 		(at 83.82 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2199,16 +2193,6 @@
 			(type default)
 		)
 		(uuid "17248069-5f5f-4cb0-b6f4-ede66e87c392")
-	)
-	(wire
-		(pts
-			(xy 167.64 83.82) (xy 172.72 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c33c1b4-8ad1-4c1f-9a9b-aebbaea332d4")
 	)
 	(wire
 		(pts
@@ -2392,6 +2376,26 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 93.98) (xy 157.48 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49319dbd-d963-4ff0-9852-eab941e83311")
+	)
+	(wire
+		(pts
+			(xy 167.64 83.82) (xy 172.72 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49596c1c-5e6c-48cb-8cdb-a70f122b2bb4")
+	)
+	(wire
+		(pts
 			(xy 19.05 52.07) (xy 19.05 59.69)
 		)
 		(stroke
@@ -2449,16 +2453,6 @@
 			(type default)
 		)
 		(uuid "6038679d-317b-44d4-af29-736b4ada692f")
-	)
-	(wire
-		(pts
-			(xy 157.48 93.98) (xy 157.48 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61c5a585-3b05-48c2-9e4d-d1e71799aa44")
 	)
 	(wire
 		(pts
@@ -2712,16 +2706,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 83.82) (xy 167.64 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5d97cde-5a12-4524-946c-cf8ee7eb6e1f")
-	)
-	(wire
-		(pts
 			(xy 77.47 38.1) (xy 77.47 43.18)
 		)
 		(stroke
@@ -2862,7 +2846,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 86.36) (xy 254 86.36)
+			(xy 227.33 86.36) (xy 254 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2892,7 +2876,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 86.36) (xy 210.82 86.36)
+			(xy 208.28 86.36) (xy 219.71 86.36)
 		)
 		(stroke
 			(width 0)
@@ -3103,6 +3087,37 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 209.55 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "52e156c5-0bce-4f3c-9d9b-6cfd61274680")
+		(property "Netclass" "RF_50_SE"
+			(at 210.2485 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 73.66 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 121.92 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3165,7 +3180,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 223.52 86.36 0)
+		(at 231.14 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3175,7 +3190,7 @@
 		)
 		(uuid "9e196f96-2ecd-48c5-a676-e8535d79e48f")
 		(property "Netclass" "RF_50_SE"
-			(at 224.2185 83.82 0)
+			(at 231.8385 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3184,7 +3199,38 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 87.63 17.78 0)
+			(at 95.25 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 186.69 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b41b2d3d-eb4b-4823-ae39-abea3798bd3c")
+		(property "Netclass" "RF_50_SE"
+			(at 187.3885 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at 113.03 13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4676,7 +4722,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 214.63 86.36 90)
+		(at 223.52 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4685,7 +4731,7 @@
 		(fields_autoplaced yes)
 		(uuid "9089846d-f615-4bd5-ac0e-5c393a187740")
 		(property "Reference" "C41"
-			(at 214.63 78.74 90)
+			(at 223.52 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4693,7 +4739,7 @@
 			)
 		)
 		(property "Value" "1n"
-			(at 214.63 81.28 90)
+			(at 223.52 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4701,7 +4747,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 218.44 85.3948 0)
+			(at 227.33 85.3948 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4710,7 +4756,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 214.63 86.36 0)
+			(at 223.52 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4765,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 214.63 86.36 0)
+			(at 223.52 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4728,7 +4774,7 @@
 			)
 		)
 		(property "LCSC" "C1523"
-			(at 214.63 86.36 90)
+			(at 223.52 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
