@@ -1320,7 +1320,7 @@
 		(descr "Connector SMA, 0Hz to 20GHz, 50Ohm, Edge Mount (http://suddendocs.samtec.com/prints/sma-j-p-x-st-em1-mkt.pdf)")
 		(tags "SMA Straight Samtec Edge Mount")
 		(property "Reference" "J4"
-			(at 0.1125 -5.64 90)
+			(at -0.0375 -5.05 90)
 			(layer "F.SilkS")
 			(uuid "4fae82f2-e7a3-4ca2-9df2-2f724a045ef1")
 			(effects
@@ -3585,7 +3585,7 @@
 		(descr "module CMS SOT223 4 pins")
 		(tags "CMS SOT")
 		(property "Reference" "U12"
-			(at -0.8 4.2 0)
+			(at 0 4.25 0)
 			(layer "F.SilkS")
 			(uuid "e4fd60e4-2d56-43ab-b3a0-684b8f51dfdd")
 			(effects
@@ -5954,13 +5954,14 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R25"
-			(at 2.3 0 90)
+			(at 2.5 0 90)
 			(layer "F.SilkS")
 			(uuid "ecf15cdd-bfb3-4d48-b454-3ae9510d73e8")
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.2)
+					(bold yes)
 				)
 			)
 		)
@@ -10241,7 +10242,7 @@
 		(descr "SMD Tactile Switch, 3.9x3x2 mm, https://lcsc.com/datasheet/lcsc_datasheet_2504101957_XUNPU-TS-1088-AR02016_C720477.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW2"
-			(at 0 -2.4 270)
+			(at -1.05 -3.35 0)
 			(layer "F.SilkS")
 			(uuid "b4e68343-f60e-4b83-9e6d-a7f44a90c276")
 			(effects
@@ -14678,7 +14679,7 @@
 		(descr "SOT-363, SC-70-6, SC-88")
 		(tags "SOT-363 SC-70-6 SC-88")
 		(property "Reference" "U7"
-			(at -1.837501 -0.1 180)
+			(at 0.061406 -0.054115 180)
 			(layer "F.SilkS")
 			(uuid "6d6388ac-4d09-4c14-9b49-78e81fd504a3")
 			(effects
@@ -15796,7 +15797,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C42"
-			(at 0 -1.16 90)
+			(at -0.3 1.3 90)
 			(layer "F.SilkS")
 			(uuid "f1481804-767b-4f6a-960c-fb1f74915a29")
 			(effects
@@ -18334,7 +18335,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R8"
-			(at -0.127501 1.2 90)
+			(at 0 -1.3 90)
 			(layer "F.SilkS")
 			(uuid "59e6f7e1-851c-4e45-87ce-2cd6866bc61c")
 			(effects
@@ -21337,7 +21338,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C23"
-			(at 2.117501 0 90)
+			(at -2.1 0.6 90)
 			(layer "F.SilkS")
 			(uuid "35c2fa43-b9ba-4cab-a384-9b44cd3f3f36")
 			(effects
@@ -21728,7 +21729,7 @@
 		(descr "SMD Tactile Switch, 3.9x3x2 mm, https://lcsc.com/datasheet/lcsc_datasheet_2504101957_XUNPU-TS-1088-AR02016_C720477.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW1"
-			(at -2.85 2.4 90)
+			(at -2.6 3.25 180)
 			(layer "F.SilkS")
 			(uuid "75a62630-9f0b-4bbf-a3b5-c8290782c5d6")
 			(effects
@@ -24031,7 +24032,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C24"
-			(at 2.157501 0.099999 90)
+			(at -2.25 0.05 90)
 			(layer "F.SilkS")
 			(uuid "a724ec98-006c-4864-979a-9f985e058fd3")
 			(effects
@@ -24769,7 +24770,7 @@
 		(descr "Resistor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R9"
-			(at 0 -1.17 90)
+			(at 0.05 1.25 90)
 			(layer "F.SilkS")
 			(uuid "9dcd954a-42b3-4405-9381-b81928d73b32")
 			(effects
@@ -24982,7 +24983,7 @@
 		(descr "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C43"
-			(at 0 -1.16 90)
+			(at -0.2 -1.6 90)
 			(layer "F.SilkS")
 			(uuid "b0c59948-f351-4ada-b773-84e76517eb10")
 			(effects
