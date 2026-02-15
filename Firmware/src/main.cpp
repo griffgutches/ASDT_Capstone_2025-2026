@@ -106,15 +106,15 @@ void setup() {
   // so I have this disabled for development.  This is probably specific to my
   // card, so this probably won't be an issue for you
 
-  //if (!SDFS.setConfig(SDFSConfig(SD_CLOCK, SD_CMD, SD_DATA_0).setAutoFormat(true))) {
-  //  Serial.println("SD config error");
-  //}
-  //if (!SDFS.begin()) {
-  //  Serial.println("SD error");
-  //  //while (true) {}
-  //} else {
-  //  Serial.println("SD set up");
-  //}
+  if (!SDFS.setConfig(SDFSConfig(SD_CLOCK, SD_CMD, SD_DATA_0).setAutoFormat(true))) {
+   Serial.println("SD config error");
+  }
+  if (!SDFS.begin()) {
+   Serial.println("SD error");
+   //while (true) {}
+  } else {
+   Serial.println("SD set up");
+  }
 
   for (int i = 0; i < 6; i++) {
     if (servo_monitors[i].begin() != INA745Result::INA_SUCCESS) {
@@ -143,11 +143,12 @@ void loop() {
     digitalWrite(SERVO_POWER_ENABLE, HIGH);
   }
 
-  for (int i = 0; i < 6; i++) {
+  //for (int i = 0; i < 6; i++) {
+  int i = 5;
     float rgb[3] = { 0 };
-    hsv2rgb(((float) ((millis() / 2 + i * 80) % 1000)) / 1000.0, 1.0, 0.125, rgb); // control brightness with .125
+    hsv2rgb(((float) ((millis() / 2 + i * 80) % 1000)) / 1000.0, 1.0, 0.05, rgb); // control brightness with .125
     leds[i] = RGB((uint8_t)(rgb[0] * 255.0), (uint8_t)(rgb[1] * 255.0), (uint8_t)(rgb[2] * 255.0));
-  }
+  //}
   //leds[LED_STATUS] = RGB(0, 128, 0);
   led_show();
   sleep_us(400); 
