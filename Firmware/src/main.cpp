@@ -4,9 +4,10 @@
 #include <MS5611_SPI.h>
 #include <ISM6HG256XSensor.h>
 #include <Adafruit_LIS2MDL.h>
-#include <SDFS.h>
+//#include <SDFS.h>
 #include "led.h"
 #include "ina745.h"
+#include "microsd.h"
 
 SoftwareSPI softSPI(SPI_SCK, SPI_MISO, SPI_MOSI);
 
@@ -24,6 +25,12 @@ INA745 servo_monitors[] = {
   INA745(0x45, &Wire),
   INA745(0x47, &Wire)
 };
+LogEntry buffer1[16384 / sizeof(LogEntry)];
+LogEntry buffer2[16384 / sizeof(LogEntry)];
+LogEntry* currentBuffer = buffer1;
+int entryCount = 0;
+volatile bool bufferReady = false;
+LogEntry* bufferToSave = nullptr;
 
 void setup() {
   // Disable servo power on startup due to inrush
@@ -101,25 +108,30 @@ void setup() {
   }
   Serial.println("Magnetometer detected");
   mag.setDataRate(LIS2MDL_RATE_100_HZ);
-
-  // my SD card doesn't enumerate unless it's fully powered off and on again,
-  // so I have this disabled for development.  This is probably specific to my
-  // card, so this probably won't be an issue for you
-
+  
+}
+void setup1() {
+  // Initialize SDFS here on Core 1
   if (!SDFS.setConfig(SDFSConfig(SD_CLOCK, SD_CMD, SD_DATA_0).setAutoFormat(true))) {
    Serial.println("SD config error");
   }
   if (!SDFS.begin()) {
    Serial.println("SD error");
-   //while (true) {}
   } else {
    Serial.println("SD set up");
   }
 
-  for (int i = 0; i < 6; i++) {
-    if (servo_monitors[i].begin() != INA745Result::INA_SUCCESS) {
-      Serial.printf("monitor %d failed to initialize\n", i);
+}
+
+void loop1() {
+  if (bufferReady) {
+    File f = SDFS.open("data114.bin", "a");
+    if (f) {
+      f.write((uint8_t*)bufferToSave, 16384);
+      f.close();
+      Serial.println("Written to file");
     }
+    bufferReady = false; // Reset the flag
   }
 }
 
@@ -141,8 +153,7 @@ void loop() {
   if (millis() > 2000) {
     // Let the capacitors slowly charge for a couple seconds before opening the mosfets
     digitalWrite(SERVO_POWER_ENABLE, HIGH);
-  }
-
+  }  
   //for (int i = 0; i < 6; i++) {
   int i = 5;
     float rgb[3] = { 0 };
@@ -154,21 +165,24 @@ void loop() {
   sleep_us(400); 
 
   static ulong last_measurement = 0;
-  if (millis() - last_measurement > 5000) {
+  if (millis() - last_measurement > 10) {
     last_measurement = millis();
     int e = baro.read();
     if (e != MS5611_READ_OK) {
       Serial.print("barometer error = ");
       Serial.println(e);
     }
-
-    Serial.print("Barometer\n");
-    Serial.print("T:\t");
-    Serial.print(baro.getTemperature(), 2);
-    Serial.print("\tP:\t");
-    Serial.print(baro.getPressure(), 2);
-    Serial.println();
-    Serial.println();
+    //test_sd_speed();
+    currentBuffer[entryCount].ms = last_measurement;
+    currentBuffer[entryCount].temp = baro.getTemperature();
+    currentBuffer[entryCount].press = baro.getPressure();
+    // Serial.print("Barometer\n");
+    // Serial.print("T:\t");
+    // Serial.print(baro.getTemperature(), 2);
+    // Serial.print("\tP:\t");
+    // Serial.print(baro.getPressure(), 2);
+    // Serial.println();
+    // Serial.println();
 
     //float battery_voltage = ((float)analogRead(BATTERY_SENSE)) / (0.3311 * 4096.0);
     //Serial.printf("Battery voltage = %fV\n", battery_voltage);
@@ -176,18 +190,33 @@ void loop() {
     ISM6HG256X_Axes_t accel, rot_rate;
     imu.Get_X_Axes(&accel);
     imu.Get_G_Axes(&rot_rate);
-
-    Serial.println("IMU:");
-    Serial.printf("Acceleration %d %d %d\n", accel.x, accel.y, accel.z);
-    Serial.printf("Rotation Rate %d %d %d\n\n", rot_rate.x, rot_rate.y, rot_rate.z);
+    currentBuffer[entryCount].accX = accel.x;
+    currentBuffer[entryCount].accY = accel.y;
+    currentBuffer[entryCount].accZ = accel.z;
+    currentBuffer[entryCount].gyroX = rot_rate.x;
+    currentBuffer[entryCount].gyroY = rot_rate.y;
+    currentBuffer[entryCount].gyroZ = rot_rate.z;
+    // Serial.println("IMU:");
+    // Serial.printf("Acceleration %d %d %d\n", accel.x, accel.y, accel.z);
+    // Serial.printf("Rotation Rate %d %d %d\n\n", rot_rate.x, rot_rate.y, rot_rate.z);
 
     sensors_event_t event;
     mag.getEvent(&event);
-    Serial.printf("Magnetometer:\n %f %f %f\n\n", event.magnetic.x, event.magnetic.y, event.magnetic.z);
+    currentBuffer[entryCount].magX = event.magnetic.x;
+    currentBuffer[entryCount].magY = event.magnetic.y;
+    currentBuffer[entryCount].magZ = event.magnetic.z;
+    currentBuffer[entryCount].test = 0xFF;
+    //Serial.printf("Magnetometer:\n %f %f %f\n\n", event.magnetic.x, event.magnetic.y, event.magnetic.z);
 
-    /*for (int i = 0; i < 6; i++) {
-      servo_monitors[i].read();
-      Serial.printf("%d: %d mV, %d mA, %d m°C, %d uW\n", i + 1, servo_monitors[i].bus_millivolts(), servo_monitors[i].current_milliamps(), servo_monitors[i].temperature_millicelsius(), servo_monitors[i].power_microwatts());
-    }*/
+    entryCount++;
+    if (entryCount >= (16384 / sizeof(LogEntry))) {
+      bufferToSave = currentBuffer;
+      bufferReady = true;
+
+      // Switch to the other bucket
+      currentBuffer = (currentBuffer == buffer1) ? buffer2 : buffer1;
+      
+      entryCount = 0;
+    }
   }
 }
