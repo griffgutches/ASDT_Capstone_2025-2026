@@ -24,13 +24,13 @@ This PCB is a rocketry flight datalogger with a comprehensive sensor suite.
 ## Pinout
 | GPIO | Function            |
 |------|---------------------|
-|    3 | Levelshift dir      |
-|    6 | Arm switch          |
-|    4 | SDA                 |
-|    5 | SCL                 |
-|   27 | GPS EXTINT          |
-|    9 | MOSI                |
-|   10 | MISO                |
+|    0 | BOOT                |
+|    1 | MS5607 CS           |
+|    2 | BMP390 CS           |
+|    4 | MMC598 CS           |
+|    7 | Radio CS            |
+|   14 | Gyro CS             |
+|   21 | HIGH_G CS           |
 |   11 | SCK                 |
 |   14 | IMU CS              |
 |   13 | Barometer CS        |
