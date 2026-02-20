@@ -33,6 +33,9 @@ volatile bool bufferReady = false;
 LogEntry* bufferToSave = nullptr;
 
 void setup() {
+
+  // Can we remove the lines in {}? I dont think we use them.:
+  // {
   // Disable servo power on startup due to inrush
   // Removing this could damage the board
   pinMode(SERVO_POWER_ENABLE, OUTPUT);
@@ -49,6 +52,8 @@ void setup() {
   pinMode(SERVO_4, OUTPUT); digitalWrite(SERVO_4, LOW);
   pinMode(SERVO_5, OUTPUT); digitalWrite(SERVO_5, LOW);
   pinMode(SERVO_6, OUTPUT); digitalWrite(SERVO_6, LOW);
+  // }
+
   pinMode(LED_DATA, OUTPUT); digitalWrite(LED_DATA, LOW);
 
   pinMode(MOSI, OUTPUT);
@@ -67,7 +72,7 @@ void setup() {
   baro.setSPIspeed(1000000);
 
   Serial.begin(9600);
-  sleep_ms(2000);
+  sleep_ms(2000);         // delay(2000);   // Replace sleep_ms()for ESP32
   Serial.println("test");
   //sleep_ms(5000);
   led_init();
@@ -162,7 +167,7 @@ void loop() {
   //}
   //leds[LED_STATUS] = RGB(0, 128, 0);
   led_show();
-  sleep_us(400); 
+  sleep_us(400);    // delayMicroseconds(2000);   // Replace sleep_us()for ESP32
 
   static ulong last_measurement = 0;
   if (millis() - last_measurement > 10) {
@@ -186,6 +191,10 @@ void loop() {
 
     //float battery_voltage = ((float)analogRead(BATTERY_SENSE)) / (0.3311 * 4096.0);
     //Serial.printf("Battery voltage = %fV\n", battery_voltage);
+
+    // Add following two lines for ESP32:
+    // analogReadResolution(12);
+    // analogSetAttenuation(ADC_11db);
 
     ISM6HG256X_Axes_t accel, rot_rate;
     imu.Get_X_Axes(&accel);
