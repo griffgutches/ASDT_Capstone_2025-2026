@@ -62,23 +62,21 @@ This PCB is a rocketry flight datalogger with a comprehensive sensor suite.
 |   20 | USB_D+              |
 |    8 | Timepulse           |
 |    8 | Battery Sense       |
-|    0 | Boot                |
+|   39 | Buzzer              |
 |   43 | ANT_SW              |
+|    6 | Radio Busy          |
 *SDA/SCL should be moved off GPIO45/46 on future designs because they are strapping pins
 
 ## Addresses
 | Name             | Part     | I2C Address |
 |------------------|----------|-------------|
-| Magnetometer     | LIS2MDL  | 0x1e        |
-| GPS              | MAX-M10S | 0x42        |
+| GPS              | MAX-M10S | 0x42 ****   |
 
 ## Notes
-- The boot and reset button on the board are enabled by the jumper JXX on the top right side of the board, this jumper must be removed before flight
+- The boot and reset button on the board are enabled by the jumper J5 on the left side of the board, this jumper must be removed before flight
 - The radio **may be damaged** if it is run without an antenna attached
-- The servo data pins and LED data pin should never be floating
-- The arming switch should have an internal pullup, and closing the switch connects the pin to ground
-- The battery sense pin is connected through a XXXk-XXk voltage divider, so the pin voltage is 0.3311 times the battery voltage
+- The LED data pin should never be floating
+- The battery sense pin is connected through a 300k-100k voltage divider, so the pin voltage is 0.25 times the battery voltage
 - The total current consumption should be below 500mA continuous
 - The GPS will blink an LED near the bottom of the board once per second once it gets a fix
-- The addressable LEDs are WS2812-compatible, and they are chained as follows: SD, radio, IMU, barometer, magnetometer, status
 
