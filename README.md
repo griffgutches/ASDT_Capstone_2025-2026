@@ -65,6 +65,7 @@ This PCB is a rocketry flight datalogger with a comprehensive sensor suite.
 |   39 | Buzzer              |
 |   43 | ANT_SW              |
 |    6 | Radio Busy          |
+
 *SDA/SCL should be moved off GPIO45/46 on future designs because they are strapping pins
 
 ## Addresses
