@@ -5,6 +5,7 @@
 #include <ISM6HG256XSensor.h>
 #include <Adafruit_LIS2MDL.h>
 //#include <SDFS.h>
+//#include <SparkFun_u-blox_GNSS_v3.h>
 #include "led.h"
 #include "ina745.h"
 #include "microsd.h"
@@ -16,6 +17,8 @@ MS5611_SPI baro(BAROMETER_CS, &softSPI);
 ISM6HG256XSensor imu(&softSPI, IMU_CS);
 
 Adafruit_LIS2MDL mag = Adafruit_LIS2MDL();
+
+//SFE_UBLOX_GNSS myGNSS;
 
 INA745 servo_monitors[] = {
   INA745(0x40, &Wire),
@@ -31,6 +34,7 @@ LogEntry* currentBuffer = buffer1;
 int entryCount = 0;
 volatile bool bufferReady = false;
 LogEntry* bufferToSave = nullptr;
+static ulong last_measurement = 2217;
 
 void setup() {
   // Disable servo power on startup due to inrush
@@ -64,7 +68,7 @@ void setup() {
   digitalWrite(BAROMETER_CS, HIGH);
   digitalWrite(IMU_CS, HIGH);
   digitalWrite(RADIO_CS, HIGH);
-  baro.setSPIspeed(1000000);
+  baro.setSPIspeed(10000000);
 
   Serial.begin(9600);
   sleep_ms(2000);
@@ -108,6 +112,15 @@ void setup() {
   }
   Serial.println("Magnetometer detected");
   mag.setDataRate(LIS2MDL_RATE_100_HZ);
+
+  //
+  // if (myGNSS.begin() == false) {
+  //   Serial.println(F("u-blox GNSS not detected. Check wiring/address."));
+  //   while (1);
+  // }
+  //
+  leds[5] = RGB(0, 5, 0);
+  led_show();
   
 }
 void setup1() {
@@ -124,14 +137,20 @@ void setup1() {
 }
 
 void loop1() {
+  static ulong last_write = 2500;
   if (bufferReady) {
-    File f = SDFS.open("data114.bin", "a");
+    File f = SDFS.open("data300.bin", "a");
     if (f) {
       f.write((uint8_t*)bufferToSave, 16384);
       f.close();
-      Serial.println("Written to file");
+      //Serial.println("Written to file");
     }
     bufferReady = false; // Reset the flag
+  }
+  
+  else if(millis() - last_write > 550){
+    last_write = millis();
+    Serial.println("Written to file");
   }
 }
 
@@ -155,18 +174,20 @@ void loop() {
     digitalWrite(SERVO_POWER_ENABLE, HIGH);
   }  
   //for (int i = 0; i < 6; i++) {
-  int i = 5;
-    float rgb[3] = { 0 };
-    hsv2rgb(((float) ((millis() / 2 + i * 80) % 1000)) / 1000.0, 1.0, 0.05, rgb); // control brightness with .125
-    leds[i] = RGB((uint8_t)(rgb[0] * 255.0), (uint8_t)(rgb[1] * 255.0), (uint8_t)(rgb[2] * 255.0));
+  // int i = 5;
+  //   float rgb[3] = { 0 };
+  //   hsv2rgb(((float) ((millis() / 2 + i * 80) % 1000)) / 1000.0, 1.0, 0.05, rgb); // control brightness with .125
+  //   leds[i] = RGB((uint8_t)(rgb[0] * 255.0), (uint8_t)(rgb[1] * 255.0), (uint8_t)(rgb[2] * 255.0));
   //}
   //leds[LED_STATUS] = RGB(0, 128, 0);
-  led_show();
-  sleep_us(400); 
+  // led_show();
+  // sleep_us(400); 
 
-  static ulong last_measurement = 0;
-  if (millis() - last_measurement > 10) {
-    last_measurement = millis();
+  static ulong last_measurement_us = 0;
+  
+  //if (millis() - last_measurement >= 1) {
+  if (micros() - last_measurement_us >= 1000) {
+    last_measurement_us = micros();
     int e = baro.read();
     if (e != MS5611_READ_OK) {
       Serial.print("barometer error = ");
@@ -207,6 +228,15 @@ void loop() {
     currentBuffer[entryCount].magZ = event.magnetic.z;
     currentBuffer[entryCount].test = 0xFF;
     //Serial.printf("Magnetometer:\n %f %f %f\n\n", event.magnetic.x, event.magnetic.y, event.magnetic.z);
+
+    // if (myGNSS.getPVT()) {
+    // long latitude = myGNSS.getLatitude(); // Degrees * 10^-7
+    // long longitude = myGNSS.getLongitude();
+    // long altitude = myGNSS.getAltitude(); // mm above ellipsoid
+    // byte SIV = myGNSS.getSIV();           // Satellites in View
+    // }
+    last_measurement ++;
+    
 
     entryCount++;
     if (entryCount >= (16384 / sizeof(LogEntry))) {
