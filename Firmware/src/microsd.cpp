@@ -7,7 +7,7 @@ const uint32_t totalSize = 5 * 1024 * 1024; // 5MB Test
   uint8_t* buf = (uint8_t*)malloc(bufSize);
   if (buf) memset(buf, 0xAA, bufSize);
 
-  File testFile = SDFS.open("/bench.bin", "w");
+  File testFile = SD_MMC.open("/bench.bin", FILE_WRITE);
   if (!testFile) {
     Serial.println("Failed to create file.");
     return;
