@@ -55,13 +55,12 @@ This PCB is a rocketry flight datalogger with a comprehensive sensor suite.
 |   33 | SD data 2           |
 |   34 | SD data 3           |
 |   36 | SD clock            |
-|    8 | Servo power enable  |
 |   15 | XTAL_32K_P          |
 |   16 | XTAL_32K_N          |
 |   19 | USB_D-              |
 |   20 | USB_D+              |
 |    8 | Timepulse           |
-|    8 | Battery Sense       |
+|    9 | Battery Sense       |
 |   39 | Buzzer              |
 |   43 | ANT_SW              |
 |    6 | Radio Busy          |
