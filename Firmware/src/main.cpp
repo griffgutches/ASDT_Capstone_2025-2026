@@ -42,7 +42,7 @@ void setup() {
   baro.setSPIspeed(10000000);
 
   Serial.begin(9600);
-  sleep_ms(2000);
+  sleep_ms(2000);         // delay(2000);   // Replace sleep_ms()for ESP32
   Serial.println("test");
 
   softSPI.begin();
@@ -151,6 +151,10 @@ void loop() {
 
     //float battery_voltage = ((float)analogRead(BATTERY_SENSE)) / (0.3311 * 4096.0);
     //Serial.printf("Battery voltage = %fV\n", battery_voltage);
+
+    // Add following two lines for ESP32:
+    // analogReadResolution(12);
+    // analogSetAttenuation(ADC_11db);
 
     ISM6HG256X_Axes_t accel, rot_rate;
     imu.Get_X_Axes(&accel);
