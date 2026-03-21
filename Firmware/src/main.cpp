@@ -12,22 +12,14 @@
 
 SoftwareSPI softSPI(SPI_SCK, SPI_MISO, SPI_MOSI);
 
-MS5611_SPI baro(BAROMETER_CS, &softSPI);
+MS5611_SPI baro(MS5607_CS, &softSPI);
 
-ISM6HG256XSensor imu(&softSPI, IMU_CS);
+ISM6HG256XSensor imu(&softSPI, ISM6HG256X_IMU_CS);
 
 Adafruit_LIS2MDL mag = Adafruit_LIS2MDL();
 
 //SFE_UBLOX_GNSS myGNSS;
 
-INA745 servo_monitors[] = {
-  INA745(0x40, &Wire),
-  INA745(0x41, &Wire),
-  INA745(0x43, &Wire),
-  INA745(0x44, &Wire),
-  INA745(0x45, &Wire),
-  INA745(0x47, &Wire)
-};
 LogEntry buffer1[16384 / sizeof(LogEntry)];
 LogEntry buffer2[16384 / sizeof(LogEntry)];
 LogEntry* currentBuffer = buffer1;
@@ -37,44 +29,21 @@ LogEntry* bufferToSave = nullptr;
 static ulong last_measurement = 2217;
 
 void setup() {
-  // Disable servo power on startup due to inrush
-  // Removing this could damage the board
-  pinMode(SERVO_POWER_ENABLE, OUTPUT);
-  digitalWrite(SERVO_POWER_ENABLE, LOW);
 
-  // put the level shifter into the regular mode
-  pinMode(LEVELSHIFT_DIR, OUTPUT);
-  digitalWrite(LEVELSHIFT_DIR, LOW);
-
-  // no floating pins for levelshifter
-  pinMode(SERVO_1, OUTPUT); digitalWrite(SERVO_1, LOW);
-  pinMode(SERVO_2, OUTPUT); digitalWrite(SERVO_2, LOW);
-  pinMode(SERVO_3, OUTPUT); digitalWrite(SERVO_3, LOW);
-  pinMode(SERVO_4, OUTPUT); digitalWrite(SERVO_4, LOW);
-  pinMode(SERVO_5, OUTPUT); digitalWrite(SERVO_5, LOW);
-  pinMode(SERVO_6, OUTPUT); digitalWrite(SERVO_6, LOW);
-  pinMode(LED_DATA, OUTPUT); digitalWrite(LED_DATA, LOW);
-
-  pinMode(MOSI, OUTPUT);
-  pinMode(MISO, INPUT);
-  pinMode(SCK, OUTPUT);
-
-  pinMode(BAROMETER_CS, OUTPUT);
-  pinMode(IMU_CS, OUTPUT);
+  pinMode(MS5607_CS, OUTPUT);
+  pinMode(ISM6HG256X_IMU_CS, OUTPUT);
   pinMode(RADIO_CS, OUTPUT);
 
   pinMode(BATTERY_SENSE, INPUT);
 
-  digitalWrite(BAROMETER_CS, HIGH);
-  digitalWrite(IMU_CS, HIGH);
+  digitalWrite(MS5607_CS, HIGH);
+  digitalWrite(ISM6HG256X_IMU_CS, HIGH);
   digitalWrite(RADIO_CS, HIGH);
   baro.setSPIspeed(10000000);
 
   Serial.begin(9600);
   sleep_ms(2000);
   Serial.println("test");
-  //sleep_ms(5000);
-  led_init();
 
   softSPI.begin();
 
@@ -119,8 +88,6 @@ void setup() {
   //   while (1);
   // }
   //
-  leds[5] = RGB(0, 5, 0);
-  led_show();
   
 }
 void setup1() {
@@ -147,32 +114,9 @@ void loop1() {
     }
     bufferReady = false; // Reset the flag
   }
-  
-  else if(millis() - last_write > 550){
-    last_write = millis();
-    Serial.println("Written to file");
-  }
-}
-
-// from https://gist.github.com/postspectacular/2a4a8db092011c6743a7
-float mix(float a, float b, float t) { return a + (b - a) * t; }
-
-float step(float e, float x) { return x < e ? 0.0 : 1.0; }
-
-float fract(float x) { return x - int(x); }
-
-float* hsv2rgb(float h, float s, float b, float* rgb) {
-  rgb[0] = b * mix(1.0, constrain(abs(fract(h + 1.0) * 6.0 - 3.0) - 1.0, 0.0, 1.0), s);
-  rgb[1] = b * mix(1.0, constrain(abs(fract(h + 0.6666666) * 6.0 - 3.0) - 1.0, 0.0, 1.0), s);
-  rgb[2] = b * mix(1.0, constrain(abs(fract(h + 0.3333333) * 6.0 - 3.0) - 1.0, 0.0, 1.0), s);
-  return rgb;
 }
 
 void loop() {
-  if (millis() > 2000) {
-    // Let the capacitors slowly charge for a couple seconds before opening the mosfets
-    digitalWrite(SERVO_POWER_ENABLE, HIGH);
-  }  
   //for (int i = 0; i < 6; i++) {
   // int i = 5;
   //   float rgb[3] = { 0 };
@@ -186,7 +130,7 @@ void loop() {
   static ulong last_measurement_us = 0;
   
   //if (millis() - last_measurement >= 1) {
-  if (micros() - last_measurement_us >= 1000) {
+  if (micros() - last_measurement_us >= 10000) {
     last_measurement_us = micros();
     int e = baro.read();
     if (e != MS5611_READ_OK) {
