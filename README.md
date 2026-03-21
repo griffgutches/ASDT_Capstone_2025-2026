@@ -24,50 +24,58 @@ This PCB is a rocketry flight datalogger with a comprehensive sensor suite.
 ## Pinout
 | GPIO | Function            |
 |------|---------------------|
-|    3 | Levelshift dir      |
-|    6 | Arm switch          |
-|    4 | SDA                 |
-|    5 | SCL                 |
-|   27 | GPS EXTINT          |
-|    9 | MOSI                |
+|    0 | BOOT                |
+|    1 | MS5607 Baro CS      |
+|    2 | BMP390 Baro CS      |
+|    4 | MMC598 Mag CS       |
+|    7 | Radio CS            |
+|   14 | BMI088 Gyro CS      |
+|   21 | ADXL375 IMU CS      |
+|   40 | BMI088 Accel CS     |
+|   41 | ISM6HG256X IMU CS   |
+|   11 | ADXL375 INT         |
+|   13 | Radio INT           |
+|   18 | BMI088 Accel INT    |
+|   31 | GPS INT             |
+|   42 | MMC598 Mag INT      |
 |   10 | MISO                |
-|   11 | SCK                 |
-|   14 | IMU CS              |
-|   13 | Barometer CS        |
-|    0 | Radio CS            |
-|    1 | Radio D0            |
-|    2 | Radio reset         |
-|   12 | LED data            |
-|    7 | Expansion pin       |
-|   15 | Expansion pin       |
-|   18 | SD CMD              |
-|   19 | SD data 0           |
-|   20 | SD data 1           |
-|   21 | SD data 2           |
-|   22 | SD data 3           |
-|   23 | SD clock            |
-|    8 | Servo power enable  |
-|   28 | Servo 1             |
-|   29 | Servo 2             |
-|   25 | Servo 3             |
-|   24 | Servo 4             |
-|   17 | Servo 5             |
-|   16 | Servo 6             |
-|   26 | Battery sense       |
+|   17 | SCK                 |
+|   44 | MOSI                |
+|   45 | SCL*                |
+|   46 | SDA*                |
+|   25 | Flash I03           |
+|   26 | Flash I02           |
+|   27 | Flash CS            |
+|   28 | Flash CLK           |
+|   29 | Flash IO1           |
+|   30 | Flash IO0           |
+|   35 | SD CMD              |
+|   37 | SD data 0           |
+|   38 | SD data 1           |
+|   33 | SD data 2           |
+|   34 | SD data 3           |
+|   36 | SD clock            |
+|   15 | XTAL_32K_P          |
+|   16 | XTAL_32K_N          |
+|   19 | USB_D-              |
+|   20 | USB_D+              |
+|    8 | Timepulse           |
+|    9 | Battery Sense       |
+|   39 | Buzzer              |
+|   43 | ANT_SW              |
+|    6 | Radio Busy          |
+
+*SDA/SCL should be moved off GPIO45/46 on future designs because they are strapping pins
 
 ## Addresses
 | Name             | Part     | I2C Address |
 |------------------|----------|-------------|
-| Magnetometer     | LIS2MDL  | 0x1e        |
-| GPS              | MAX-M10S | 0x42        |
+| GPS              | MAX-M10S | 0x42 ****   |
 
 ## Notes
-- The boot and reset button on the board are enabled by the jumper JXX on the top right side of the board, this jumper must be removed before flight
+- The boot and reset button on the board are enabled by the jumper J5 on the left side of the board, this jumper must be removed before flight
 - The radio **may be damaged** if it is run without an antenna attached
-- The servo data pins and LED data pin should never be floating
-- The arming switch should have an internal pullup, and closing the switch connects the pin to ground
-- The battery sense pin is connected through a XXXk-XXk voltage divider, so the pin voltage is 0.3311 times the battery voltage
+- The LED data pin should never be floating
+- The battery sense pin is connected through a 300k-100k voltage divider, so the pin voltage is 0.25 times the battery voltage
 - The total current consumption should be below 500mA continuous
 - The GPS will blink an LED near the bottom of the board once per second once it gets a fix
-- The addressable LEDs are WS2812-compatible, and they are chained as follows: SD, radio, IMU, barometer, magnetometer, status
-
