@@ -1,4 +1,4 @@
-#include <Arduino.h>
+//#include <Arduino.h>
 #include <pins.h>
 #include <SPI.h>
 #include <MS5611_SPI.h>
@@ -12,7 +12,7 @@ SPIClass mySPI(HSPI);
 
 MS5611_SPI baro(MS5607_CS, &mySPI);
 
-ISM6HG256XSensor imu(&mySPI, ISM6HG256X_IMU_CS);
+// ISM6HG256XSensor imu(&mySPI, ISM6HG256X_IMU_CS);
 
 //SFE_UBLOX_GNSS myGNSS;
 void Sensorscode(void * parameter);
@@ -27,7 +27,7 @@ LogEntry* currentBuffer = buffer1;
 int entryCount = 0;
 volatile bool bufferReady = false;
 LogEntry* bufferToSave = nullptr;
-static ulong last_measurement = 2217;
+//static ulong last_measurement = 2217;
 
 void setup() {
 
@@ -54,28 +54,12 @@ void setup() {
   
   baro.setSPIspeed(10000000);
 
-  xTaskCreatePinnedToCore(
-                    Sensorscode,   /* Task function. */
-                    "Sensors",     /* name of task. */
-                    10000,       /* Stack size of task */
-                    NULL,        /* parameter of the task */
-                    1,           /* priority of the task */
-                    &Sensors,      /* Task handle to keep track of created task */
-                    1);          /* pin task to core 0 */                  
-  delay(500); 
-  xTaskCreatePinnedToCore(
-                    Storingcode,   /* Task function. */
-                    "Storing",     /* name of task. */
-                    10000,       /* Stack size of task */
-                    NULL,        /* parameter of the task */
-                    1,           /* priority of the task */
-                    &Storing,      /* Task handle to keep track of created task */
-                    0);          /* pin task to core 1 */                  
 
 
   Serial.begin(9600);
   delay(2000);         // delay(2000);   // Replace sleep_ms()for ESP32
   Serial.println("test");
+
 
 
   Serial.println("baro.begin()");
@@ -90,16 +74,15 @@ void setup() {
   }
   baro.reset(1);
 
-  int imu_status = imu.begin();
-  if (imu_status != 0) {
-    Serial.println("IMU error");
-    while (true) {}
-  }
-  Serial.println("IMU detected");
-  imu.Enable_X();
-  imu.Enable_G();
+  // int imu_status = imu.begin();
+  // if (imu_status != 0) {
+  //   Serial.println("IMU error");
+  // }
+  // Serial.println("IMU detected");
+  // imu.Enable_X();
+  // imu.Enable_G();
 
-  imu.Set_X_FullScale(8);
+  // imu.Set_X_FullScale(8);
 
   Wire.begin(4, 5);      // SDA, SCL
   Wire.setClock(100000); // => 100kHz I2C clock speed
@@ -121,6 +104,24 @@ void setup() {
   //   while (1);
   // }
   //
+  xTaskCreatePinnedToCore(
+                    Sensorscode,   /* Task function. */
+                    "Sensors",     /* name of task. */
+                    10000,       /* Stack size of task */
+                    NULL,        /* parameter of the task */
+                    1,           /* priority of the task */
+                    &Sensors,      /* Task handle to keep track of created task */
+                    1);          /* pin task to core 0 */                  
+  delay(500); 
+  xTaskCreatePinnedToCore(
+                    Storingcode,   /* Task function. */
+                    "Storing",     /* name of task. */
+                    10000,       /* Stack size of task */
+                    NULL,        /* parameter of the task */
+                    1,           /* priority of the task */
+                    &Storing,      /* Task handle to keep track of created task */
+                    0);          /* pin task to core 1 */                  
+
   
 }
 
@@ -138,22 +139,25 @@ void Sensorscode(void * parameter) {
         Serial.print("barometer error = ");
         Serial.println(e);
       }
-      currentBuffer[entryCount].ms = last_measurement;
+      //currentBuffer[entryCount].ms = last_measurement;
       currentBuffer[entryCount].temp = baro.getTemperature();
       currentBuffer[entryCount].press = baro.getPressure();
+
+      //Serial.println(baro.getTemperature(), 2);
+      //Serial.println(baro.getPressure(), 2);
       
-      ISM6HG256X_Axes_t accel, rot_rate;
-      imu.Get_X_Axes(&accel);
-      imu.Get_G_Axes(&rot_rate);
-      currentBuffer[entryCount].accX = accel.x;
-      currentBuffer[entryCount].accY = accel.y;
-      currentBuffer[entryCount].accZ = accel.z;
-      currentBuffer[entryCount].gyroX = rot_rate.x;
-      currentBuffer[entryCount].gyroY = rot_rate.y;
-      currentBuffer[entryCount].gyroZ = rot_rate.z;
+      //ISM6HG256X_Axes_t accel, rot_rate;
+      //imu.Get_X_Axes(&accel);
+      //imu.Get_G_Axes(&rot_rate);
+      //currentBuffer[entryCount].accX = accel.x;
+      //currentBuffer[entryCount].accY = accel.y;
+      //currentBuffer[entryCount].accZ = accel.z;
+      //currentBuffer[entryCount].gyroX = rot_rate.x;
+      //currentBuffer[entryCount].gyroY = rot_rate.y;
+      //currentBuffer[entryCount].gyroZ = rot_rate.z;
       currentBuffer[entryCount].test = 0xFF;
       
-      last_measurement ++;
+      //last_measurement ++;
   
 
       entryCount++;
@@ -174,11 +178,11 @@ void Sensorscode(void * parameter) {
 void Storingcode(void * parameter) {
   while (true) {
     if (bufferReady) {
-      File f = SD_MMC.open("data300.bin", FILE_APPEND);
+      File f = SD_MMC.open("/data500.bin", FILE_APPEND);
       if (f) {
         f.write((uint8_t*)bufferToSave, 16384);
         f.close();
-        //Serial.println("Written to file");
+        Serial.println("Written to file");
       }
       bufferReady = false; // Reset the flag
     }

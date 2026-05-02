@@ -19,8 +19,8 @@
 #define SPI_MISO               10
 #define SPI_SCK                17
 #define SPI_MOSI               44
-#define SCL                    45
-#define SDA                    46
+#define I2C_SCL                45
+#define I2C_SDA                46
 
 #define FLASH_I03              25
 #define FLASH_I02              26
